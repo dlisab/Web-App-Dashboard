@@ -1,6 +1,12 @@
 h1 {
     color: white;
     font-size: 2em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+    ;
 
     
+}
+.logo {
+    background-color: mediumslateblue;
+    padding: 15px;
 }
