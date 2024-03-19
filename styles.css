@@ -1,14 +1,8 @@
-header
-
-h1 {
+.header{
+    background-color: #9798c1;
+    padding: 10px;
     color: white;
-    font-size: 2em;
-    font-family: Verdana, Geneva, Tahoma, sans-serif
-    ;
+    display: flex;
+    flex-direction: column;
+}
 
-    
-}
-.logo {
-    background-color: mediumslateblue;
-    padding: 15px;
-}
