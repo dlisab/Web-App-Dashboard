@@ -46,23 +46,23 @@
             <div class ="main-header">
                 <h2 class="headline">Dashboard</h2>
                 <div class="tab"></div>
-                    <div class="alert" if="'alert">
+                    <div class="alert" id="'alert">
                     <div class="message">Alert: You have unread messages</div>
                     </div>
             </div>
         </div>
 
 
-    <!--line graph charts-->
+    <!--Traffic section - line graph charts-->
 
 
     <section class="traffic">
         <div class="traffic-header">
             <h3>Traffic</h3>
             <ul class="traffic-nav">
-                <li class="traffic-nav-link">Hourly</li>
+                <li class="traffic-nav-link active">Hourly</li>
                 <li class="traffic-nav-link">Daily</li>
-                <li class="traffic-nav-link active">Weekly</li>
+                <li class="traffic-nav-link">Weekly</li>
                 <li class="traffic-nav-link">Monthly</li>
             </ul>    
         </div>
@@ -72,20 +72,9 @@
             </div>
     </section>
         
-    <!--Traffic graphic-->
-        <div class="chart-container">
-            <div class="traffic-daily">
-                    <h3>Traffic</h3>
-            </div>
-    </section>
-<!--bar graph-->
-<section class="daily">
-<h3>Daily Traffic</h3>   
-        <div class="widget-container-half">
-             <!-- element line graph will attach to -->
-            <canvas id="daily-chart"></canvas>
-        </div>
-    </section>
+
+<!--donut graph-->
+
     <section class="daily">
         <h3>Mobile Users</h3>   
                 <div class="widget-container-half">
@@ -93,6 +82,8 @@
                     <canvas id="daily-chart"></canvas>
                 </div>
             </section>
+
+<!--SOCIAL-->
 
   <div class="social-container">
         <div class="social-status">
@@ -128,7 +119,8 @@
             </div>
             </div>
         </div>
-    </div>    
+    </div> 
+    <!--MEMBERS-->
     <section class="members">
             <h3>New Members</h3>
                 <div class="members-container">
@@ -177,7 +169,7 @@
                     </div>
             </div>
         </div>
-        <div class="recent-activity"> 
+        <section class="recent-activity"> 
             <h3>Recent Activity</h3>  
             <div class="activity-list">
                 <div class="user">
@@ -209,13 +201,12 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
         
         <!--Messaging Widget-->
 
         <section class="message">
             <h3>Message User</h3>
-            <form>
                 <form class="widget-container">
                     <input type="text" placeholder="Search for user"
                     
@@ -228,7 +219,7 @@
                     <button class="button-primary" id="send" >Send</button>
                     </form>
         </section>
-                <section class="setting">
+                <section class="message">
                     <h3>Settings</h3>
                     <div class="label">Send Email Notifications</div>
                     <div class="switch">
@@ -268,4 +259,4 @@
 			</div>
     </body>
 
-</html>
+</html> 
