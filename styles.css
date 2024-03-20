@@ -4,7 +4,7 @@
     grid-template-rows: auto;
     grid-template-areas: 
         "header"
-        "navigation"
+        "nav"
         "main";
 }
 
@@ -12,24 +12,51 @@ header {
     grid-area: header;
 }
 nav {
-    grid-area: navigation;
+    grid-area: nav;
 }
 
 
-main{
+main {
     display: grid;
  }
 
 .social {
+    grid-area: social;
 
 
 }
 
 
-
+.new-members{
+    grid-area: new-members;
+    display: flex;
+    flex-direction: column;
+}
+.recent-activity{
+    grid-area: recent-activity;
+    display: flex;
+    flex-direction: column;
+}
+.message {
+    grid-area: message;
+    display: flex;
+    flex-direction: column;
+}
+.settings {
+    grid-area: settings;
+    display: flex;
+    flex-direction: column;
+}
 
 /* 2-column section*/
-
+.main{
+    display: grid;
+}
+@media (min-width: 768px) {
+    .main {
+        grid-template-coumns: 50%
+    }
+}
 
 
 @media (min-width: 768px) {
