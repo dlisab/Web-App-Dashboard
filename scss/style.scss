@@ -98,9 +98,7 @@ header {
   
   .user {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    border-radius: 50%;
   }
   
   .user-avatar {
@@ -109,7 +107,6 @@ header {
     justify-content: center;
     border-left: 1px solid #4d4c72;
     margin-left: 20px;
-    border-radius: 50%;
   }
 
   .user-name {
