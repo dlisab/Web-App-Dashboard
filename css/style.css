@@ -80,6 +80,7 @@ header {
   height: 36px;
   margin: 5px 0;
   transition: width 0.3s, height 0.3s;
+  align-items: center;
 }
 
 nav {
