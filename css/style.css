@@ -65,6 +65,13 @@ p {
 
 header {
   grid-area: header;
+  background-color: #7477bf;
+  color: #fff;
+  padding: 0 0 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
 nav {
