@@ -102,13 +102,10 @@ sup {
   justify-content: center;
 }
 
-.user-avatar {
-  display: flex;
-  align-items: center;
-  height: 55px;
-  justify-content: center;
-  border-left: 1px solid #fff;
-  margin-left: 20px;
+.avatar img {
+  margin: 0 10px 0 0;
+  border-radius: 50%;
+  max-width: 30px;
 }
 
 .user-name {
