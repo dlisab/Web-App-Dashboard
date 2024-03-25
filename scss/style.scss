@@ -78,8 +78,14 @@ header {
     justify-content: space-between;
     align-items: center;
 }
+sup {
+  font-size: .5rem;
+}
+
 .bell {
-    fill: #fff;
+  fill: none;
+  stroke: #fff;
+  stroke-width: 1px;
     width: 36px;
     height: 36px;
     margin: 5px 0;
