@@ -105,8 +105,9 @@ sup {
 .user-avatar {
   display: flex;
   align-items: center;
+  height: 55px;
   justify-content: center;
-  border-left: 1px solid #4d4c72;
+  border-left: 1px solid #fff;
   margin-left: 20px;
 }
 
