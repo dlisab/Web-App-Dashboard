@@ -74,6 +74,13 @@ header {
   align-items: center;
 }
 
+.header-icon {
+  width: 20px;
+  height: 20px;
+  margin: 5px 0;
+  transition: width 0.3s, height 0.3s;
+}
+
 nav {
   grid-area: nav;
 }
