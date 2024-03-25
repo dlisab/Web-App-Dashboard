@@ -81,6 +81,7 @@ sup {
 
 .bell {
   fill: white;
+  stroke-width: 5px;
   width: 30px;
   height: 30px;
   margin: 36px 0;
