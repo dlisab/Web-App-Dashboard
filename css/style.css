@@ -5,6 +5,64 @@
   grid-template-areas: "header" "nav" "main";
 }
 
+/* Element Styles -----------------------------*/
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-weight: lighter;
+  font-size: 2rem;
+  margin: 2rem;
+  color: #fff;
+}
+
+h2 {
+  font-size: 1.3rem;
+  margin: 1.3rem;
+  text-transform: capitalize;
+}
+
+h3 {
+  font-size: 0.9rem;
+  margin: 0.9rem;
+  text-transform: uppercase;
+}
+
+h2,
+h3 {
+  font-weight: 100;
+  color: gray;
+}
+
+h4 {
+  font-size: 0.9rem;
+  font-weight: normal;
+  margin: 0.5rem;
+  text-transform: capitalize;
+  color: gray;
+}
+
+p,
+img {
+  margin: 0 1rem;
+}
+
+div {
+  padding: 5px 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #c9c9c9;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 1.25rem;
+}
+
 header {
   grid-area: header;
 }
