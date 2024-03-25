@@ -74,7 +74,8 @@ header {
   align-items: center;
 }
 
-.header-icon {
+.bell {
+  fill: #fff;
   width: 20px;
   height: 20px;
   margin: 5px 0;
