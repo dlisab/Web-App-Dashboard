@@ -46,6 +46,7 @@ h4 {
 p,
 img {
   margin: 0 1rem;
+  border-radius: 50%;
 }
 
 div {
@@ -94,8 +95,9 @@ header {
 
 .user {
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
+  border-radius: 50%;
 }
 
 .user-avatar {
@@ -104,6 +106,7 @@ header {
   justify-content: center;
   border-left: 1px solid #4d4c72;
   margin-left: 20px;
+  border-radius: 50%;
 }
 
 .user-name {
@@ -126,7 +129,6 @@ main {
 .new-members {
   grid-area: new-members;
   display: flex;
-  flex-direction: column;
 }
 
 .recent-activity {
