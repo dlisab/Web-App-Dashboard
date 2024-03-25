@@ -49,6 +49,7 @@
   p,
   img {
     margin: 0 1rem;
+    border-radius: 50%;
   }
   
   div {
@@ -110,9 +111,7 @@ header {
     margin-left: 20px;
     border-radius: 50%;
   }
-  img {
-    border-radius: 50%;
-  }
+
   .user-name {
     margin: 0;
   }
