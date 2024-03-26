@@ -130,11 +130,15 @@ sup {
   align-items: baseline;
   padding: 0;
 }
+.nav ul{
+  list-style-type: none;
+}
 
 nav {
 	img[src$=".svg"] {
 		max-width: 32px;
 		margin: auto;
+    fill-rule: white;
 
 		@media (min-width: 768px) {
 			margin: auto;
