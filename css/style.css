@@ -131,13 +131,13 @@ sup {
   list-style-type: none;
 }
 
-nav img[src$=".svg"] {
+.nav img[src$=".svg"] {
   max-width: 32px;
   margin: auto;
   fill-rule: white;
 }
 @media (min-width: 768px) {
-  nav img[src$=".svg"] {
+  .nav img[src$=".svg"] {
     margin: auto;
   }
 }
