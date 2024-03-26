@@ -131,20 +131,16 @@ sup {
   padding: 0;
 }
 
-.nav div {
-  padding: 10px;
-  margin: 0;
-  border: 5px solid #4d4c72;
-}
+nav {
+	img[src$=".svg"] {
+		max-width: 32px;
+		margin: auto;
 
-.active {
-  border-bottom: 5px solid #2ecc71;
-}
-.nav li {
-  width: 20%;
-  
-}
-
+		@media (min-width: 768px) {
+			margin: auto;
+		}
+	}
+} 
 
 main {
 grid-area: main; 
