@@ -121,7 +121,7 @@ sup {
   }
   /* Navigation Styles --*/
 
-/*nav {
+nav {
   grid-area: nav;
   background-color: #4d4c72;
   display: flex;
@@ -130,7 +130,7 @@ sup {
   align-items: baseline;
   padding: 0;
 }
-*/
+
 nav ul{
   list-style-type: none;
 }
@@ -140,10 +140,7 @@ nav {
 		max-width: 32px;
 		margin: auto;
 
-		@media (min-width: 768px) {
-			margin: auto;
-		}
-	}
+		
 } 
 
 main {
