@@ -117,7 +117,7 @@ sup {
 }
 
 /* Navigation Styles --*/
-/*nav {
+nav {
   grid-area: nav;
   background-color: #4d4c72;
   display: flex;
@@ -126,7 +126,7 @@ sup {
   align-items: baseline;
   padding: 0;
 }
-*/
+
 nav ul {
   list-style-type: none;
 }
@@ -134,11 +134,6 @@ nav ul {
 nav img[src$=".svg"] {
   max-width: 32px;
   margin: auto;
-}
-@media (min-width: 768px) {
-  nav img[src$=".svg"] {
-    margin: auto;
-  }
 }
 
 main {
