@@ -117,7 +117,7 @@ sup {
 }
 
 /* Navigation Styles --*/
-nav {
+/*nav {
   grid-area: nav;
   background-color: #4d4c72;
   display: flex;
@@ -126,7 +126,7 @@ nav {
   align-items: baseline;
   padding: 0;
 }
-
+*/
 nav ul {
   list-style-type: none;
 }
