@@ -136,6 +136,11 @@ nav img[src$=".svg"] {
   margin: auto;
 }
 
+/*dashboard-alert*/
+.alert-banner {
+  background-color: #7477bf;
+}
+
 main {
   grid-area: main;
 }
