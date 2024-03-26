@@ -104,6 +104,13 @@ sup {
     display: flex;
     justify-content: center;
   }
+.avatar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-left: 1px solid fff;
+  margin-left: 20px;
+}
 
   .avatar {
 		img {
