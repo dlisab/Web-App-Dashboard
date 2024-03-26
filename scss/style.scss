@@ -121,7 +121,7 @@ sup {
   }
   /* Navigation Styles --*/
 
-nav {
+.nav {
   grid-area: nav;
   background-color: #4d4c72;
   display: flex;
@@ -131,7 +131,7 @@ nav {
   padding: 0;
 }
 
-nav div {
+.nav div {
   padding: 10px;
   margin: 0;
   border: 5px solid #4d4c72;
@@ -140,7 +140,7 @@ nav div {
 .active {
   border-bottom: 5px solid #2ecc71;
 }
-nav li {
+.nav li {
   width: 20%;
   
 }
