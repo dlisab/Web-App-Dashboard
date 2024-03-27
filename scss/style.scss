@@ -121,28 +121,25 @@ sup {
   }
   /* Navigation Styles --*/
 
-nav {
-  grid-area: nav;
-  background-color: #4d4c72;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: baseline;
-  padding: 0;
-}
+  nav {
+    grid-area: nav;
+    background-color: #4d4c72;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+    padding: 0;
+  }
+  
+  nav div {
+    padding: 10px;
+    margin: 0;
+    border: 5px solid #4d4c72;
+  }
+  
+  .active {
+    border-bottom: 5px solid #2ecc71;
+  }
 
-nav ul{
-  list-style-type: none;
-}
-
-nav {
-	img[src$=".svg"] {
-		max-width: 32px;
-		margin: auto;
-
-		
-} 
-}
 /*dashboard-alert*/
 .alert-banner{
   background-color: #7477bf;
