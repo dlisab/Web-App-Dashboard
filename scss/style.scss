@@ -132,6 +132,7 @@ nav {
 		justify-content: space-around;
 		align-content: center;
 		li {
+      width: 40px;
 			padding: 10px;
 			&.active, &:hover {
 				cursor: pointer;
