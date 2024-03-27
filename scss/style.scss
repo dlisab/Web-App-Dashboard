@@ -121,24 +121,37 @@ sup {
   }
   /* Navigation Styles --*/
 
+ 
+  
   nav {
-    grid-area: nav;
     background-color: #4d4c72;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: baseline;
-    padding: 0;
+    color: #fff;
   }
   
-  nav div {
-    padding: 10px;
+  nav ul {
+    list-style-type: none;
     margin: 0;
-    border: 5px solid #4d4c72;
+    padding: 0;
+    display: flex;
   }
   
-  .active {
-    border-bottom: 5px solid #2ecc71;
+  nav li {
+    margin-right: 20px;
   }
+  
+  nav a {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  nav svg {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+  }
+  
 
 /*dashboard-alert*/
 .alert-banner{
