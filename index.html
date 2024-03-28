@@ -11,7 +11,7 @@
 
 
    
-<body class="grid">
+<body class="container">
 <!-- Header Section -->    
     <header>
         <div class="user">
@@ -32,12 +32,26 @@
     </header>
     <!-- Navigation Section -->
     <nav>
-        <div><img class="nav-icon" src="svgs/icon-home.svg" alt="home icon"></div>
-        <div><img class="nav-icon" src="svgs/icon-members.svg" alt="members icon"></div>
-        <div><img class="nav-icon" src="svgs/icon-bar-chart.svg" alt="bar-chart icon"></div>
-        <div><img class="nav-icon" src="svgs/icon-settings.svg" alt="settings icon"></div>
-      </nav>
-   
+        <ul>
+            <li class="nav--dashboard active">
+                <!--Dashboard-->
+                <img src="svgs/icon-home.svg" />
+            </li>
+            <li class="nav--traf">
+                <!--User Profile-->
+                <a href="#trafnav"><img src="svgs/icon-members.svg" /></a>
+            </li>
+            <li class="nav--mems">
+                <!--Reports-->
+                <a href="#memnav"><img src="svgs/icon-members.svg" /></a>
+            </li>
+            <li class="nav--setts">
+                <!--Settings-->
+                <a href="#setnav"><img src="svgs/icon-settings.svg" /></a>
+            </li>
+        </ul>
+    </nav>
+
    <!-- Main Content Section -->
       <main>
 
