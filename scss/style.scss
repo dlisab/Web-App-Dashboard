@@ -125,28 +125,27 @@ sup {
   /* Navigation Styles --*/
 
  
-
-.nav {
-  display: flex;
-  flex-direction: row;
-  padding: 10px;
-  margin: 0;
-  border: 5px solid #4d4c72;
-  width: 40px;
-
-}
-.nav-icon {
-  
-  background-color: #4d4c72;
-  justify-content: space-evenly;
-  align-items: baseline;
-  padding: 0;
-}
-
-.active {
-  border-bottom: 5px solid #2ecc71;
-}
-
+  nav {
+    ul {
+      margin:0;
+      margin-top: 11px;
+      list-style-type: none;
+      display: flex;
+        flex-direction: row;
+      justify-content: space-around;
+      align-content: center;
+      flex-grow: 1;
+      li {
+        padding: 0;
+        width: 10%;
+        &.active, &:hover {
+          cursor: pointer;
+          border-bottom: 5px solid #85db80;
+          padding-bottom: 3.5%;
+        }
+      }
+    }
+  }
 
 /*dashboard-alert*/
 .alert-banner{
