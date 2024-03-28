@@ -126,12 +126,14 @@ sup {
 
  
 
-nav div {
+nav{
   display: flex;
   flex-direction: row;
   padding: 10px;
   margin: 0;
   border: 5px solid #4d4c72;
+  width: 40px;
+
 }
 nav-icon {
   grid-area: nav;
@@ -140,7 +142,6 @@ nav-icon {
   justify-content: space-evenly;
   align-items: baseline;
   padding: 0;
-  width: 40px;
 }
 
 .active {
