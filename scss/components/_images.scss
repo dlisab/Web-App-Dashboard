@@ -1,0 +1,128 @@
+//Image:
+
+img {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+header{
+	.user-notifications {
+		display: flex;
+		flex-direction: column;
+	  svg.bell {
+			width: 20px;
+			margin: 0 auto;
+			max-height: 20px;
+			fill: white;
+			path {
+				transition-property: opacity;
+				transition-duration: 1s;
+			 &.default {
+					opacity: 1;
+				}
+			 &.fill {
+					opacity: 0;
+				}
+			}
+			&:hover, &.fill-bell {
+				cursor: pointer;
+				width:30px;
+				transition: width .5s;
+				
+				path {
+				 &.default {
+						opacity: 0;
+					}
+				 &.fill {
+						opacity: 1;
+					}
+				}
+			}
+		}
+	}
+	.avatar {
+		img {
+			margin: 0 10px 0 0;
+			border-radius: 50%;
+			max-width: 30px;
+		}
+	}
+}
+nav{
+	img[src$=".svg"] {
+		margin: 0;
+		min-width: 20px;
+		filter: invert(100%);
+		@media (min-width: 768px) {
+			margin: auto;
+			width: 90%;
+		}
+	}
+}
+
+.social{
+	.submodule {
+		.social-icon {
+				background: $lavender;
+				width: 60px;
+		    	height: 60px;
+		    	border-radius: 50%;
+		    	position: relative;
+		    	display: inline-block;
+				margin-right: 10px;
+			.icon{
+				position: absolute;
+				&.facebook {
+					width: 40px;
+					height: 32px;
+					top: 1.0em;
+					left: 0.75em;
+				}
+				&.instagram{
+					width: 33px;
+					height: 37px;
+					top: .8em;
+					left: .9em;
+				}
+				&.twitter {
+					width: 30px;
+					height: 30px;
+					top: .9em;
+					left: 1em;
+				}
+				path{
+					fill: $white;
+				}
+			}
+		}
+	}
+}
+
+.new-members {
+	.member-list {
+		.member {
+		 	.avatar {
+				img {
+					margin: 0 auto;
+					width: 40px;
+					max-width: 40px;
+					border-radius: 50%;
+				}
+			}
+		}
+	}
+}
+.recent-activity {
+	.activity-list {
+		.member {
+		 	.avatar {
+				img {
+					margin: 0 auto;
+					width: 40px;
+					max-width: 40px;
+					border-radius: 50%;
+				}
+			}
+		}
+	}
+}
