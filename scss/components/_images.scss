@@ -5,7 +5,7 @@ img {
 	height: auto;
 	display: block;
 }
-/*--header{
+header{
 	.user-notifications {
 		display: flex;
 		flex-direction: row;
@@ -40,7 +40,7 @@ img {
 				}
 			}
 		}
-	} */
+	}
 	.avatar {
 		img {
 			margin: 0 10px 0 0;
@@ -48,7 +48,7 @@ img {
 			max-width: 30px;
 		}
 	}
-
+}
 nav{
 	img[src$=".svg"] {
 		margin: 0;
