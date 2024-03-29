@@ -5,10 +5,11 @@ img {
 	height: auto;
 	display: block;
 }
-header{
+/*--header{
 	.user-notifications {
 		display: flex;
-		flex-direction: column;
+		flex-direction: row;
+		justify-content: first baseline;
 	  svg.bell {
 			width: 20px;
 			margin: 0 auto;
@@ -39,7 +40,7 @@ header{
 				}
 			}
 		}
-	}
+	} */
 	.avatar {
 		img {
 			margin: 0 10px 0 0;
@@ -47,7 +48,7 @@ header{
 			max-width: 30px;
 		}
 	}
-}
+
 nav{
 	img[src$=".svg"] {
 		margin: 0;
