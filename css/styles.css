@@ -768,14 +768,6 @@ header .avatar img {
   max-width: 30px;
 }
 
-nav {
-  grid-area: nav;
-  background-color: #4d4c72;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: baseline;
-  padding: 0;
-}
 
 nav div {
   padding: 10px;
