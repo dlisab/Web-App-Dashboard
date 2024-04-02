@@ -768,7 +768,8 @@ header .avatar img {
 }
 
 nav img[src$=".svg"] {
-  margin: 0;
+  margin: 0 20px;
+  width: 70px;
   min-width: 20px;
   filter: invert(100%);
 }
