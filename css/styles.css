@@ -768,48 +768,54 @@ header .avatar img {
   max-width: 30px;
 }
 
-nav img[src$=".svg"] {
-  margin: 0 20px;
-  width: 70px;
-  min-width: 20px;
-  filter: invert(100%);
+nav {
+  grid-area: nav;
+  background-color: #4d4c72;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: baseline;
+  padding: 0;
 }
-@media (min-width: 768px) {
-  nav img[src$=".svg"] {
-    margin: auto;
-    width: 90%;
-  }
+
+nav div {
+  padding: 10px;
+  margin: 0;
+  border: 5px solid #4d4c72;
+}
+
+.active {
+  border-bottom: 5px solid #2ecc71;
 }
 
 .social .submodule .social-icon {
   background: #7477bf;
-  width: 60px;
-  height: 60px;
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
+  margin: 0 15px 0 0;
   position: relative;
   display: inline-block;
-  margin-right: 10px;
 }
 .social .submodule .social-icon .icon {
   position: absolute;
 }
 .social .submodule .social-icon .icon.facebook {
-  width: 40px;
+  width: 20px;
   height: 32px;
-  top: 1em;
-  left: 0.75em;
-}
-.social .submodule .social-icon .icon.instagram {
-  width: 33px;
-  height: 37px;
-  top: 0.8em;
-  left: 0.9em;
+  top: 1.15em;
+  left: 1.6em;
 }
 .social .submodule .social-icon .icon.twitter {
+  width: 33px;
+  height: 37px;
+  top: 1.25em;
+  left: 1.25em;
+}
+.social .submodule .social-icon .icon.google {
   width: 30px;
   height: 30px;
-  top: 0.9em;
-  left: 1em;
+  top: 1.25em;
+  left: 1.25em;
 }
 .social .submodule .social-icon .icon path {
   fill: #ffffff;
