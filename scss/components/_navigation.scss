@@ -7,7 +7,7 @@ nav {
 		display: flex;
     flex-direction: row;
 		justify-content: space-around;
-		align-content: center;
+		align-content: space-evenly;
 		li {
 			padding: 10px;
 			&.active, &:hover {

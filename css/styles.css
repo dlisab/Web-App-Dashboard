@@ -663,7 +663,7 @@ nav ul {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  align-content: center;
+  align-content: space-evenly;
 }
 nav ul li {
   padding: 10px;
