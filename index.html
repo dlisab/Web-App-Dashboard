@@ -77,22 +77,20 @@
     <!--Traffic section - line graph charts-->
 
 
-    <section class="traffic">
+    <div class="module traffic border-bottom" id="trafnav">
         <div class="traffic-header">
             <h3>Traffic</h3>
-            <ul class="traffic-nav">
-                <li class="traffic-nav-link active">Hourly</li>
-                <li class="traffic-nav-link">Daily</li>
-                <li class="traffic-nav-link">Weekly</li>
-                <li class="traffic-nav-link">Monthly</li>
+            <ul class="traffic-type">
+                <li class="traffic-filter hourlyt" id="btn1">Hourly</li>
+                <li class="traffic-filter dailyt" id="btn2">Daily</li>
+                <li class="traffic-filter weeklyt" id="btn3">Weekly</li>
+                <li class="traffic-filter monthlyt" id="btn4">Monthly</li>
             </ul>
         </div>
-        <div class="widget-container-full">
-            <!-- element line graph will attach to -->
-            <canvas id="traffic-chart"></canvas>
+        <div class="chart-container">
+            <canvas id="trafficOverview"></canvas>
         </div>
-    </section>
-
+</div>
 
     <!--donut graph-->
 
@@ -280,6 +278,7 @@
     </section>
     </div>
 </body>
+</main>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
 		<script type="module" src="js/charts.js"></script>
