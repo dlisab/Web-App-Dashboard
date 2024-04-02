@@ -8,8 +8,7 @@ img {
 header{
 	.user-notifications {
 		display: flex;
-		flex-direction: row;
-		justify-content: first baseline;
+		flex-direction: column;
 	  svg.bell {
 			width: 20px;
 			margin: 0 auto;
@@ -27,9 +26,6 @@ header{
 			}
 			&:hover, &.fill-bell {
 				cursor: pointer;
-				width:30px;
-				transition: width .5s;
-				
 				path {
 				 &.default {
 						opacity: 0;
