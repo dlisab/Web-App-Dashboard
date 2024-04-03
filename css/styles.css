@@ -663,10 +663,12 @@ nav ul {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  align-content: space-evenly;
+  align-content: center;
+  flex-grow: 1;
 }
 nav ul li {
-  padding: 10px;
+  padding: 0;
+  width: 10%;
 }
 nav ul li.active, nav ul li:hover {
   cursor: pointer;

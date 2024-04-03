@@ -5,11 +5,13 @@ nav {
 		margin-top: 11px;
 		list-style-type: none;
 		display: flex;
-    flex-direction: row;
+    	flex-direction: row;
 		justify-content: space-around;
-		align-content: space-evenly;
+		align-content: center;
+		flex-grow: 1;
 		li {
-			padding: 10px;
+			padding: 0;
+			width: 10%;
 			&.active, &:hover {
 				cursor: pointer;
 				border-bottom: 5px solid #85db80;
