@@ -105,11 +105,14 @@ main {
 					margin-top: 50px;
 				}
 				.traffic-nav {
+					display: flex
+					flex-direction: row;
+					justify-content: space-around;
 					list-style-type: none;
 					margin-top: 0;
 					.traffic-filter {
-						display: flex;
-						justify-content: space-around;
+						
+					
 						padding: 7px 15px;
 						font-size: 14px;  
 						font-weight: normal;
