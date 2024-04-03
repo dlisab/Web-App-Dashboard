@@ -99,7 +99,7 @@ main {
 		&.traffic {
 			.traffic-header {
 				display: flex;
-				flex-direction: column;
+				flex-direction: row;
 				justify-content: space-between;
 				@media (min-width: 768px){
 					margin-top: 50px;
@@ -110,7 +110,7 @@ main {
 					.traffic-filter {
 						display: inline;
 						padding: 7px 15px;
-						font-size: 14px;
+						font-size: 14px;  
 						font-weight: normal;
 						&.active {
 							background-color: $green;

@@ -1164,7 +1164,7 @@ main .module {
 }
 main .module.traffic .traffic-header {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-between;
 }
 @media (min-width: 768px) {
