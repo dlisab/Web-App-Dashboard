@@ -104,11 +104,12 @@ main {
 				@media (min-width: 768px){
 					margin-top: 50px;
 				}
-				.traffic-type {
+				.traffic-nav {
 					list-style-type: none;
 					margin-top: 0;
 					.traffic-filter {
-						display: inline-block;
+						display: flex;
+						justify-content: space-around;
 						padding: 7px 15px;
 						font-size: 14px;  
 						font-weight: normal;
