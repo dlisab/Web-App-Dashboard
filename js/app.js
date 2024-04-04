@@ -120,4 +120,39 @@ for (var i = 0; i < x.length; i++) {
 document.addEventListener("click", function (e) {
 	closeAllLists(e.target);
 });
+//Local Storage
+
+function save() {
+    const toggle1 = document.getElementById('toggle1');
+    localStorage.setItem('toggle1', toggle1.checked);
+
+    const toggle2 = document.getElementById('toggle2');
+    localStorage.setItem('toggle2', toggle2.checked);
+
+///TODO: get this timezone to save
+    const select = document.getElementById('member-timezone');
+		localStorage.setItem('select', select.selectedIndex);
+
+
+
+    alert('Your settings are saved');
 }
+
+function load() {
+    const toggle1 = JSON.parse(localStorage.getItem('toggle1'));
+    document.getElementById('toggle1').checked = toggle1;
+
+    const toggle2 = JSON.parse(localStorage.getItem('toggle2'));
+    document.getElementById('toggle2').checked = toggle2;
+
+    const memberTimeZone = JSON.parse(localStorage.getItem('select'));
+    document.getElementById('member-timezone').selectedIndex = memberTimeZone;
+}
+
+function cancel() {
+    location.reload();
+    localStorage.clear();
+    document.getElementById('member-timezone').select = '';
+}
+
+load();}
