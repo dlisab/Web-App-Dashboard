@@ -1,6 +1,9 @@
-const trafficCanvas = document.getElementById("trafficOverview");
-const dailyCanvas = document.getElementById("dailyTraffic");
-const mobileCanvas = document.getElementById("mobileUsers");
+const canvas = document.querySelector('canvas');
+const traffic = document.querySelector('.traffic-filter');
+const hourly = document.querySelector('.hourly');
+const daily = document.querySelector('.daily');
+const weekly = document.querySelector('.weekly');
+const monthly = document.querySelector('.monthly');
 
 
 let trafficData = {
