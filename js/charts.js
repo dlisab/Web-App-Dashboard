@@ -5,7 +5,15 @@ const daily = document.querySelector('.daily');
 const weekly = document.querySelector('.weekly');
 const monthly = document.querySelector('.monthly');
 
-
+// Traffic Overview
+var chartData = {
+	labels: ["16-22", "23-29", "30-5", "6-12", "13-19", "20-26", "27-3", "4-10", "11-17", "18-24", "25-31"],
+	datasets: [{
+		backgroundColor: 'rgba(116, 120, 191, .5)',
+		borderColor: 'rgba(116, 120, 191, 1)',
+		data: [750, 1250, 1000, 1500, 2000, 1500, 1750, 1250, 1750, 2250, 1750, 2250],
+	}]
+};
 let trafficData = {
     labels: ["16-22", "23-29", "30-5", "6-12", "13-19", "20-26", "27-3",
     "4-10", "11-17", "18-24", "25-31"],
