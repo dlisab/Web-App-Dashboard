@@ -120,6 +120,28 @@ for (var i = 0; i < x.length; i++) {
 document.addEventListener("click", function (e) {
 	closeAllLists(e.target);
 });
+}
+
+/*An array containing all the country names in the world:*/
+var users = ['Victoria Chambers', 'Dale Byrd', 'Dawn Wood', 'Dan Oliver', 'Joe Schmoe', 'Amy Warner'];
+
+/*initiate the autocomplete function on the "myInput" element, and pass along the countries array as possible autocomplete values:*/
+autocomplete(document.getElementById("myInput"), users);
+var myInput = document.getElementById("myInput");
+var textField = document.getElementById("textField");
+
+var send = document.querySelector('.send');
+
+send.addEventListener('click', (e) => {
+    if ( myInput.value == "" || myInput.value == null  || textField.value == "" || textField.value == null) {
+        alert('Please complete both fields.')
+    } else {
+        alert('Your message has been successfully sent!')
+				document.getElementById('message-user').reset()
+    }
+});
+
+
 //Local Storage
 
 function save() {
@@ -155,4 +177,4 @@ function cancel() {
     document.getElementById('member-timezone').select = '';
 }
 
-load();}
+load();
