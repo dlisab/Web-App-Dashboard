@@ -21,41 +21,6 @@ function displayAlert() {
 };
 window.onload = displayAlert();
 
-//Notification dropdown
-const un = document.querySelector('.user-notifications');
-const nl = document.querySelector('.notification-list');
-const bell = document.querySelector('.bell');
-const dot = document.querySelector('.notification-dot');
-
-const clear = document.querySelector('.clear-notifications');
-const nlist = document.querySelector('.nlist');
-const emptylist = document.querySelector('.emptylist');
-
-function displayNotifications() {
-		nl.classList.toggle('show-notification');
-		bell.classList.toggle('fill-bell');
-	};
-
-function clearNotifications() {
-	let dn = displayNotifications();
-	nlist.classList.toggle('clearlist');
-	emptylist.classList.toggle('clearlist');
-	clear.style.display = 'none';
-	dot.style.display = 'none';
-	//dn.preventDefault();
-};
-
-
-un.addEventListener('click', (e) => {
-	displayNotifications();
-});
-
-
-clear.addEventListener('click', (e) => {
-	clearNotifications();
-});
-
-
 
 
 
@@ -126,37 +91,35 @@ inp.addEventListener("keydown", function(e) {
 	}
 });
 function addActive(x) {
-	/*a function to classify an item as "active":*/
-	if (!x) return false;
-	/*start by removing the "active" class on all items:*/
-	removeActive(x);
-	if (currentFocus >= x.length) currentFocus = 0;
-	if (currentFocus < 0) currentFocus = (x.length - 1);
-	/*add class "autocomplete-active":*/
-	x[currentFocus].classList.add("autocomplete-active");
+/*a function to classify an item as "active":*/
+if (!x) return false;
+/*start by removing the "active" class on all items:*/
+removeActive(x);
+if (currentFocus >= x.length) currentFocus = 0;
+if (currentFocus < 0) currentFocus = (x.length - 1);
+/*add class "autocomplete-active":*/
+x[currentFocus].classList.add("autocomplete-active");
+}
+function removeActive(x) {
+/*a function to remove the "active" class from all autocomplete items:*/
+for (var i = 0; i < x.length; i++) {
+	x[i].classList.remove("autocomplete-active");
+}
+}
+function closeAllLists(elmnt) {
+/*close all autocomplete lists in the document,
+except the one passed as an argument:*/
+var x = document.getElementsByClassName("autocomplete-items");
+for (var i = 0; i < x.length; i++) {
+	if (elmnt != x[i] && elmnt != inp) {
+		x[i].parentNode.removeChild(x[i]);
 	}
-	function removeActive(x) {
-	/*a function to remove the "active" class from all autocomplete items:*/
-	for (var i = 0; i < x.length; i++) {
-		x[i].classList.remove("autocomplete-active");
-	}
-	}
-	function closeAllLists(elmnt) {
-	/*close all autocomplete lists in the document,
-	except the one passed as an argument:*/
-	var x = document.getElementsByClassName("autocomplete-items");
-	for (var i = 0; i < x.length; i++) {
-		if (elmnt != x[i] && elmnt != inp) {
-			x[i].parentNode.removeChild(x[i]);
-		}
-	}
-	}
-	/*execute a function when someone clicks in the document:*/
-	document.addEventListener("click", function (e) {
-		closeAllLists(e.target);
-	});
-	}
-
+}
+}
+/*execute a function when someone clicks in the document:*/
+document.addEventListener("click", function (e) {
+	closeAllLists(e.target);
+});
 //Local Storage
 
 function save() {
