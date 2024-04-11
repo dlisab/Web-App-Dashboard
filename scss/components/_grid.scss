@@ -51,14 +51,21 @@ Grid
   
   @media (min-width: 768px) {
 
-	header {
+	.container {
+		grid-template-columns: 55px 1fr;
+        grid-template-areas:
+        "header header"
+        "nav main";
+    }
+    header {
 			grid-template-columns: 3fr 1fr;
 	}
 
 	main {
 
 		&.show-alert {
-			grid-template-rows: 150px minmax(150px, auto);
+            display: grid;
+			width: 94vw;
 		}
 		.tab {
 			grid-area: tab;
@@ -66,12 +73,15 @@ Grid
 			.heading {grid-area: heading;}
 			.search {grid-area: search;}
 			.notice {grid-area: notice;}
-			display: grid;
+            width: 95%;
+
+            display: grid;
 			grid-template-columns: auto 1fr;
 			grid-template-rows: 70px;
 			grid-template-areas:
 				"heading search"
 				"notice notice";
+            margin-bottom: 20px;
 		}
 
 		.traffic {grid-area: traffic;}
