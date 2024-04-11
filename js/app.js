@@ -154,7 +154,7 @@ document.addEventListener("click", function (e) {
 }
 
 /*An array containing all the country names in the world:*/
-var users = ['Victoria Chambers', 'Dale Byrd', 'Dawn Wood', 'Dan Oliver', 'Joe Schmoe', 'Amy Warner'];
+var users = ['Victoria Chambers', 'Dale Byrd', 'Dawn Wood', 'Dan Oliver'];
 
 /*initiate the autocomplete function on the "myInput" element, and pass along the countries array as possible autocomplete values:*/
 autocomplete(document.getElementById("myInput"), users);
@@ -182,7 +182,7 @@ function save() {
     const toggle2 = document.getElementById('toggle2');
     localStorage.setItem('toggle2', toggle2.checked);
 
-///TODO: get this timezone to save
+///TODO: get timezone to save
     const select = document.getElementById('member-timezone');
 		localStorage.setItem('select', select.selectedIndex);
 
