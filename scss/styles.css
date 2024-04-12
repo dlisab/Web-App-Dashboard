@@ -934,6 +934,7 @@ button {
 .settings form .setting {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 .settings form .setting .label {
   display: inline-block;
