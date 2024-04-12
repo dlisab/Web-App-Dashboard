@@ -70,13 +70,15 @@ button {
 			.label {
 				display: inline-block;
 				width: 50%;
-				
+				float: left;
 			}
 			//Toggle Switches
 			.switch {
 		    position: relative;
 				width: 90px;
-		
+		   	-webkit-user-select:none;
+				-moz-user-select:none;
+				-ms-user-select: none;
 				display: block;
 				float: left;
 				margin-bottom: 5px;
@@ -160,7 +162,7 @@ button {
 			}
 		}
 	}
-
+}
 
 /*the container must be positioned relative:*/
 .autocomplete {
