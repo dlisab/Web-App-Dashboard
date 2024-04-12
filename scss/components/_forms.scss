@@ -65,6 +65,7 @@ button {
 		.setting {
 			display: flex;
 			flex-direction: row;
+			justify-content: space-between;
 			.label {
 				display: inline-block;
 				width: 50%;
