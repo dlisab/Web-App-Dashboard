@@ -939,10 +939,14 @@ button {
 .settings form .label {
   display: inline-block;
   width: 50%;
+  float: left;
 }
 .settings form .switch {
   position: relative;
   width: 90px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
   display: block;
   float: left;
   margin-bottom: 5px;
