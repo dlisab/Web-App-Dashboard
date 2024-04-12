@@ -1320,10 +1320,11 @@ main .border-top {
   border-top: 1px solid #cccccc;
 }
 
-.memwrap {
-  display: grid;
+@media (min-width: 1024px) {
+  .memwrap {
+    display: grid;
+  }
 }
-
 .chart-container {
   width: auto;
 }
