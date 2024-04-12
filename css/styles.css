@@ -1158,8 +1158,8 @@ main .notice .alert .closebtn {
   transition: 0.3s;
 }
 main .module {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  /*padding-top: 30px;
+  padding-bottom: 30px;*/
   padding-left: 5px;
   padding-right: 5px;
 }
