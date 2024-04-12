@@ -1193,78 +1193,42 @@ main .module.traffic .traffic-header .traffic-type .traffic-filter.active {
 main .module.mobile, main .module.recent-activity, main .module.message, main .module.settings {
   border-top: 1px solid #cccccc;
 }
-main .module.new-members {
-  display: flex;
-  flex-direction: column;
-  grid-column-start: inherit;
-}
 main .module.new-members .member-list .member {
   border-bottom: 1px solid #cccccc;
   padding-top: 10px;
   padding-bottom: 10px;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-@media (min-width: 768px) {
-  main .module.new-members .member-list .member {
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: row;
-    text-align: left;
-    padding-bottom: 36px;
-  }
+  flex-direction: row;
 }
 main .module.new-members .member-list .member:last-child {
   border-bottom: none;
 }
 main .module.new-members .member-list .member .user {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-@media (min-width: 768px) {
-  main .module.new-members .member-list .member .user {
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: row;
-    text-align: left;
-  }
+  flex-direction: row;
+  justify-content: flex-start;
 }
 main .module.new-members .member-list .member .user .avatar {
   margin: 0 15px 0 0;
   display: inline-block;
 }
-@media (min-width: 768px) {
-  main .module.new-members .member-list .member .date {
-    margin-left: auto;
-  }
+main .module.new-members .member-list .member .date {
+  margin-left: auto;
 }
 main .module.recent-activity .activity-list .member {
   border-bottom: 1px solid #cccccc;
   padding-top: 10px;
   padding-bottom: 10px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
 main .module.recent-activity .activity-list .member:last-child {
   border-bottom: none;
 }
 main .module.recent-activity .activity-list .member .user {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-}
-@media (min-width: 768px) {
-  main .module.recent-activity .activity-list .member .user {
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: row;
-    text-align: left;
-  }
+  flex-direction: row;
+  justify-content: flex-start;
 }
 main .module.recent-activity .activity-list .member .user .avatar {
   margin: 0 15px 0 0;
