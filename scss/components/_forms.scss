@@ -73,6 +73,25 @@ button {
 				width: 50%;
 				float: left;
 			}
+
+			@media (min-width: 768px) {
+				.settings {
+					form {
+						margin-top: auto;
+						.setting {
+							display: flex;
+							flex-direction: row;
+							justify-content: flex-start;
+						}
+							.label {
+								display: inline-block;
+								width: 50%;
+								float: left;
+							}
+						}
+					}
+				}
+
 			//Toggle Switches
 			.switch {
 		    position: relative;
