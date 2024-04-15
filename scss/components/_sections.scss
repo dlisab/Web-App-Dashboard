@@ -125,7 +125,6 @@ main {
 		&.message,
 		&.settings {
 			border-top: 1px solid $grey;
-			margin-top: 20px;
 		}
 		&.new-members {
 			display:flex;
@@ -219,6 +218,8 @@ main {
 			}
 			&.settings {
 				border-left: 1px solid $grey;
+				margin-top: 20px;
+
 			}
 		}
 	}
