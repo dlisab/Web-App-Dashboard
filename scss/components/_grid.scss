@@ -72,7 +72,7 @@ Grid
 			.heading {grid-area: heading;}
 			.search {grid-area: search;}
 			.notice {grid-area: notice;
-			width:95%;
+			width:100%;
 			}
 			display: grid;
 			grid-template-columns: auto 1fr;
