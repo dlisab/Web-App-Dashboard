@@ -1274,12 +1274,6 @@ main .module.recent-activity .activity-list .member .more {
   main .module.mobile, main .module.recent-activity {
     border-top: none;
   }
-  main .module .module {
-    padding-top: 0px;
-    padding-bottom: 0px;
-    padding-right: 30px;
-    padding-left: 30px;
-  }
   main .module.settings {
     border-left: 1px solid #cccccc;
     margin-top: 20px;
