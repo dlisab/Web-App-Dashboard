@@ -1273,7 +1273,12 @@ main .module.recent-activity .activity-list .member .more {
 @media (min-width: 768px) {
   main .module.mobile, main .module.recent-activity {
     border-top: none;
-    border-left: 1px solid #cccccc;
+  }
+  main .module .module {
+    /*padding-top: 30px;
+    padding-bottom: 30px;*/
+    padding-right: 30px;
+    padding-left: 30px;
   }
   main .module.settings {
     border-left: 1px solid #cccccc;

@@ -214,7 +214,13 @@ main {
 			&.mobile,
 			&.recent-activity {
 				border-top: none;
-				border-left: 1px solid $grey;
+				
+			}
+			.module {
+				/*padding-top: 30px;
+				padding-bottom: 30px;*/
+				padding-right: 30px;
+				padding-left: 30px;
 			}
 			&.settings {
 				border-left: 1px solid $grey;
