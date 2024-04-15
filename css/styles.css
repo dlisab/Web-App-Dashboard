@@ -1275,8 +1275,8 @@ main .module.recent-activity .activity-list .member .more {
     border-top: none;
   }
   main .module .module {
-    /*padding-top: 30px;
-    padding-bottom: 30px;*/
+    padding-top: 0px;
+    padding-bottom: 0px;
     padding-right: 30px;
     padding-left: 30px;
   }
