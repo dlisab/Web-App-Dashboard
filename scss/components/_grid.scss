@@ -62,26 +62,24 @@ Grid
 	}
     main {
 
+		
 		&.show-alert {
-			display: grid;
-			width: 100%;
+			grid-template-rows: 150px minmax(150px, auto);
 		}
 		.tab {
 			grid-area: tab;
 
 			.heading {grid-area: heading;}
 			.search {grid-area: search;}
-			.notice {grid-area: notice;
-			width:100%;
-			}
+			.notice {grid-area: notice;}
 			display: grid;
 			grid-template-columns: auto 1fr;
 			grid-template-rows: 70px;
 			grid-template-areas:
 				"heading search"
 				"notice notice";
-			margin-bottom: 20px;
 		}
+
 
 		.traffic {grid-area: traffic;
 		grid-column: 1 / span 2;}
