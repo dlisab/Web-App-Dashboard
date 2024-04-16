@@ -231,8 +231,7 @@ main {
 			padding-bottom: 10px;
 			display: flex;
 			flex-direction: row;
-			&:last-child {
-				border-bottom: none;
+			
 			}
 			.user {
 				display: flex;
