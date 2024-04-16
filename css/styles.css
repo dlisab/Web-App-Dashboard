@@ -63,13 +63,13 @@ header .user-header .notification-list:before {
   margin-left: -33px;
 }
 
-main .module.recent-activity .activity-list .member .more .arrow {
+main.recent-activity .activity-list .member .more .arrow {
   border: solid #7477bf;
   border-width: 0 2px 2px 0;
   display: inline-block;
   padding: 5px;
 }
-main .module.recent-activity .activity-list .member .more .right.arrow {
+main.recent-activity .activity-list .member .more .right.arrow {
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
 }
@@ -1330,96 +1330,97 @@ main .module.new-members .member-list .member {
   display: flex;
   flex-direction: row;
 }
-main .module.new-members .member-list .member:last-child {
-  border-bottom: none;
-}
-main .module.new-members .member-list .member .user {
+main .module.new-members .member-list .user {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
 }
-main .module.new-members .member-list .member .user .avatar {
+main .module.new-members .member-list .user .avatar {
   margin: 0 15px 0 0;
   display: inline-block;
 }
-main .module.new-members .member-list .member .date {
+main .module.new-members .member-list .date {
   margin-left: auto;
 }
-main .module.recent-activity .activity-list .member {
+main.recent-activity .activity-list .member {
   border-bottom: 1px solid #cccccc;
   padding-top: 10px;
   padding-bottom: 10px;
   display: flex;
   flex-direction: column;
 }
-main .module.recent-activity .activity-list .member:last-child {
+main.recent-activity .activity-list .member:last-child {
   border-bottom: none;
 }
-main .module.recent-activity .activity-list .member .user {
+main.recent-activity .activity-list .member .user {
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
 }
 @media (min-width: 768px) {
-  main .module.recent-activity .activity-list .member .user {
+  main.recent-activity .activity-list .member .user {
     flex-direction: row;
     justify-content: flex-start;
     align-items: row;
     text-align: left;
   }
 }
-main .module.recent-activity .activity-list .member .user .avatar {
+main.recent-activity .activity-list .member .user .avatar {
   margin: 0 15px 0 0;
   display: inline-block;
 }
-main .module.recent-activity .activity-list .member .more {
+main.recent-activity .activity-list .member .more {
   margin-left: auto;
 }
 @media (min-width: 768px) {
-  main .module.mobile, main .module.recent-activity {
+  main.mobile, main.recent-activity {
     border-top: none;
   }
-  main .module.settings {
+  main.settings {
     border-left: 1px solid #cccccc;
     margin-top: 20px;
   }
 }
-main .tab .heading {
+
+.tab .heading {
   padding-right: 30px;
   padding-left: 30px;
   padding-top: 20px;
 }
-main .tab .search {
+.tab .search {
   border-bottom: 1px solid #cccccc;
 }
 @media (min-width: 768px) {
-  main .tab .search {
+  .tab .search {
     background-color: #fbfbfb;
     border-left: 1px solid #cccccc;
     padding-right: 30px;
   }
 }
-main .submodule {
+
+.submodule {
   background-color: #fbfbfb;
   border: 1px solid #cccccc;
   border-radius: 5px;
   padding: 10px;
   margin-bottom: 20px;
 }
-main .submodule .shares h4 {
+.submodule .shares h4 {
   color: #7477bf;
   margin: 0;
 }
 @media (min-width: 768px) {
-  main .submodule {
+  .submodule {
     margin-bottom: 0;
   }
 }
-main .border-bottom {
+
+.border-bottom {
   border-bottom: 1px solid #cccccc;
 }
-main .border-top {
+
+.border-top {
   border-top: 1px solid #cccccc;
 }
 
