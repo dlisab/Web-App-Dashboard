@@ -52,12 +52,12 @@ Grid
   
   @media (min-width: 768px) {
 
-	/*.container {
+.container {
 		grid-template-columns: 55px 1fr;
         grid-template-areas:
         "header header"
         "nav main";
-    }*/
+    }
     header {
 			grid-template-columns: 3fr 1fr;
 	}
