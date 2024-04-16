@@ -1270,7 +1270,7 @@ main .module.traffic .traffic-header .traffic-type .traffic-filter.active {
   color: #ffffff;
   border-radius: 50px/50px;
 }
-main .module.mobile, main .module.recent-activity, main .module.message, main .module.settings {
+main .module.mobile, main .module.message, main .module.settings {
   border-top: 1px solid #cccccc;
 }
 main .module.new-members {
