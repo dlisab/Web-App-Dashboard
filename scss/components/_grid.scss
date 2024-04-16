@@ -62,36 +62,48 @@ Grid
 			grid-template-columns: 3fr 1fr;
 	}
     main {
-				&.show-alert {
-			grid-template-rows: 150px minmax(150px, auto);
+		&.show-alert {
+			display: grid;
+			width: 94vw;
 		}
 		.tab {
 			grid-area: tab;
 
 			.heading {grid-area: heading;}
 			.search {grid-area: search;}
-			.notice {grid-area: notice;}
+			.notice {grid-area: notice; width: 95%;
+			}
 			display: grid;
 			grid-template-columns: auto 1fr;
 			grid-template-rows: 70px;
 			grid-template-areas:
 				"heading search"
 				"notice notice";
+			margin-bottom: 20px;
 		}
 
 
-		.traffic {grid-area: traffic;}
-		.daily {grid-area: daily;}
-		.mobile {grid-area: mobile;}
-
-		.social {
-			.submodule-container {
-				.submodule {
-					width: 50%;
+		.traffic {grid-area: traffic;
+			grid-column: 1 / span 2;}
+			.daily {grid-area: daily;
+			grid-column: 1 / span 1;}
+			.mobile {grid-area: mobile;}
+			grid-column: 2 /span 1;
+	
+			.social {
+				.submodule-container {
+					flex-direction: row;
+					justify-content: flex-start;
+	
+					
+	
+					.submodule {
+						width: auto;
+						margin-left: 5px;
+						margin-right: 5px;
+					}	
 				}
 			}
-		}
-
 		.new-members {
 			grid-area: new-members;
 			display: flex;

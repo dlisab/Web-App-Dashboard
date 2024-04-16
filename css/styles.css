@@ -511,11 +511,13 @@ main .social .submodule-container .submodule {
     grid-template-columns: 3fr 1fr;
   }
   main {
+    grid-column: 2/span 1;
     grid-template-columns: 50% 50%;
     grid-template-areas: "tab tab" "traffic traffic" "daily mobile" "social social" "new-members recent-activity" "message settings";
   }
   main.show-alert {
-    grid-template-rows: 150px minmax(150px, auto);
+    display: grid;
+    width: 94vw;
   }
   main .tab {
     grid-area: tab;
@@ -523,6 +525,7 @@ main .social .submodule-container .submodule {
     grid-template-columns: auto 1fr;
     grid-template-rows: 70px;
     grid-template-areas: "heading search" "notice notice";
+    margin-bottom: 20px;
   }
   main .tab .heading {
     grid-area: heading;
@@ -532,18 +535,27 @@ main .social .submodule-container .submodule {
   }
   main .tab .notice {
     grid-area: notice;
+    width: 95%;
   }
   main .traffic {
     grid-area: traffic;
+    grid-column: 1/span 2;
   }
   main .daily {
     grid-area: daily;
+    grid-column: 1/span 1;
   }
   main .mobile {
     grid-area: mobile;
   }
+  main .social .submodule-container {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
   main .social .submodule-container .submodule {
-    width: 50%;
+    width: auto;
+    margin-left: 5px;
+    margin-right: 5px;
   }
   main .new-members {
     grid-area: new-members;
