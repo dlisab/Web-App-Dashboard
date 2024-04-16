@@ -1191,7 +1191,8 @@ header .user-header .user-notifications .notification-list .clear-notifications 
 header .user-header .user {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: flex-end;
+  align-items: center;
 }
 @media (min-width: 768px) {
   header .user-header {
@@ -1249,12 +1250,6 @@ main .module {
   padding-bottom: 30px;
   padding-right: 30px;
   padding-left: 30px;
-  /*@media (min-width: 1024px){
-  	.memwrap{
-  		display:grid;
-  	}
-  }
-  */
 }
 main .module.traffic .traffic-header {
   display: flex;
@@ -1373,6 +1368,11 @@ main .module .border-bottom {
 }
 main .module .border-top {
   border-top: 1px solid #cccccc;
+}
+@media (min-width: 1024px) {
+  main .module .memwrap {
+    display: grid;
+  }
 }
 main .module .chart-container {
   height: 300px;
