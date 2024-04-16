@@ -1381,11 +1381,6 @@ main .module .border-bottom {
 main .module .border-top {
   border-top: 1px solid #cccccc;
 }
-@media (min-width: 1024px) {
-  main .module .memwrap {
-    display: grid;
-  }
-}
 main .module .chart-container {
   height: 300px;
 }
