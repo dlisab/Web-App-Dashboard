@@ -29,6 +29,40 @@ button, [class^=btn--] {
   margin: 0 auto;
 }
 
+header .user-header .notification-list {
+  color: #333333;
+  position: relative;
+  background: #fbfbfb;
+  border: 2px solid #cccccc;
+  border-radius: 3px;
+}
+header .user-header .notification-list:after, header .user-header .notification-list:before {
+  bottom: 100%;
+  left: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+}
+@media (min-width: 768px) {
+  header .user-header .notification-list:after, header .user-header .notification-list:before {
+    left: 100%;
+  }
+}
+header .user-header .notification-list:after {
+  border-color: rgba(251, 251, 251, 0);
+  border-bottom-color: #fbfbfb;
+  border-width: 7px;
+  margin-left: -30px;
+}
+header .user-header .notification-list:before {
+  border-color: rgba(204, 204, 204, 0);
+  border-bottom-color: #cccccc;
+  border-width: 10px;
+  margin-left: -33px;
+}
+
 main .module.recent-activity .activity-list .member .more .arrow {
   border: solid #7477bf;
   border-width: 0 2px 2px 0;
@@ -1104,13 +1138,63 @@ header .user-header .user-notifications .notification-dot {
 header .user-header .user-notifications:hover {
   cursor: pointer;
 }
-header .user-header .user {
+header .user-header .notification-list {
+  display: none;
+  position: absolute;
+  top: 32px;
+  right: -150px;
+  width: 300px;
+}
+header .user-header .notification-list.show-notification {
+  display: block;
+  z-index: 100;
+}
+@media (min-width: 768px) {
+  header .user-header .notification-list {
+    top: 32px;
+    right: 0;
+  }
+}
+header .user-header .notification-list ul {
+  list-style-type: none;
+  margin-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+header .user-header .notification-list ul.nlist li {
+  padding: 10px;
+  border-bottom: 1px solid #cccccc;
+}
+header .user-header .notification-list ul.nlist li:last-child {
+  border-bottom: none;
+}
+header .user-header .notification-list ul.nlist li:hover {
+  background-color: rgba(3, 3, 3, 0.1);
+}
+header .user-header .notification-list ul.nlist.clearlist {
+  display: none;
+}
+header .user-header .notification-list ul.emptylist {
+  display: none;
+}
+header .user-header .notification-list ul.emptylist li {
+  padding: 10px;
+  text-align: center;
+}
+header .user-header .notification-list ul.emptylist.clearlist {
+  display: block;
+}
+header .user-header .notification-list .clear-notifications {
+  float: right;
+  margin: 5px;
+}
+header .user {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
 }
 @media (min-width: 768px) {
-  header .user-header {
+  header {
     padding-right: 5px;
   }
 }
@@ -1194,49 +1278,72 @@ main .module.new-members {
   flex-direction: column;
   grid-column-start: inherit;
 }
+main .module.new-members .member-list {
+  /*	.member {
+  			border-bottom: 1px solid $grey;
+  			padding-top: 10px;
+  			padding-bottom: 10px;
+  			display: flex;
+  			flex-direction: column;
+  			justify-content: center;
+  			align-items: center;
+  			text-align: center;
+  			@media (min-width: 768px){
+  				flex-direction: row;
+  			justify-content: flex-start;
+  			align-items: row;
+  			text-align: left;
+  			padding-bottom: 36px;
+  			}
+  			&:last-child {
+  				border-bottom: none;
+  			}
+  			.user {
+  				display: flex;
+  				flex-direction: column;
+  				justify-content: center;
+  				@media (min-width: 768px){
+  					flex-direction: row;
+  				justify-content: flex-start;
+  				align-items: row;
+  				text-align: left;
+  				}
+  				.avatar {
+  					margin: 0 15px 0 0;
+  					display: inline-block;
+  				}
+  			}
+  			.date {
+  				@media (min-width: 768px){
+  				margin-left: auto;
+  				}
+  			}
+  		}
+  	}
+  }
+  */
+}
 main .module.new-members .member-list .member {
   border-bottom: 1px solid #cccccc;
   padding-top: 10px;
   padding-bottom: 10px;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-@media (min-width: 768px) {
-  main .module.new-members .member-list .member {
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: row;
-    text-align: left;
-    padding-bottom: 36px;
-  }
+  flex-direction: row;
 }
 main .module.new-members .member-list .member:last-child {
   border-bottom: none;
 }
 main .module.new-members .member-list .member .user {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-@media (min-width: 768px) {
-  main .module.new-members .member-list .member .user {
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: row;
-    text-align: left;
-  }
+  flex-direction: row;
+  justify-content: flex-start;
 }
 main .module.new-members .member-list .member .user .avatar {
   margin: 0 15px 0 0;
   display: inline-block;
 }
-@media (min-width: 768px) {
-  main .module.new-members .member-list .member .date {
-    margin-left: auto;
-  }
+main .module.new-members .member-list .member .date {
+  margin-left: auto;
 }
 main .module.recent-activity .activity-list .member {
   border-bottom: 1px solid #cccccc;
