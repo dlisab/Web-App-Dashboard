@@ -122,7 +122,7 @@ main {
 		.alert {
 			margin-right: 30px;
 			margin-left: 30px;
-			/*margin-top: 25px;*/
+			margin-top: 25px;
 			padding: 10px;
 			border-radius: 5px;
 			background-color: $lavender;
@@ -172,7 +172,7 @@ main {
 			}
 		}
 		&.mobile,
-		
+		&.recent-activity,
 		&.message,
 		&.settings {
 			border-top: 1px solid $grey;
@@ -231,7 +231,8 @@ main {
 			padding-bottom: 10px;
 			display: flex;
 			flex-direction: row;
-			
+			&:last-child {
+				border-bottom: none;
 			}
 			.user {
 				display: flex;
@@ -252,30 +253,24 @@ main {
 		&.recent-activity {
 			.activity-list {
 				.member {
-					border-bottom: 1px solid $grey;
-					padding-top: 10px;
-					padding-bottom: 10px;
-					display: flex;
-					flex-direction: column;
-					
-					&:last-child {
-						border-bottom: none;
-					}
-					.user {
+					.member {
+						border-bottom: 1px solid $grey;
+						padding-top: 10px;
+						padding-bottom: 10px;
 						display: flex;
-						flex-direction: column;
-						justify-content: center;
-						text-align: center;
-						@media (min-width: 768px){
-							flex-direction: row;
-						justify-content: flex-start;
-						align-items: row;
-						text-align: left;}
-						.avatar {
-							margin: 0 15px 0 0;
-							display: inline-block;
+						flex-direction: row;
+						&:last-child {
+							border-bottom: none;
 						}
-					}
+						.user {
+							display: flex;
+							flex-direction: row;
+							justify-content: flex-start;
+							.avatar {
+								margin: 0 15px 0 0;
+								display: inline-block;
+							}
+						}
 					.more {
 						.arrow {
 							@extend %ico-arrow;
