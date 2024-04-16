@@ -29,7 +29,7 @@ Grid
       grid-area: main;
       display: flex;
       flex-direction: column;
-	  overflow-x: hidden;
+	  /*overflow-x: hidden;*/
   
       .social {
           grid-area: social;

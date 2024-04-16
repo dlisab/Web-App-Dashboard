@@ -482,7 +482,7 @@ main {
   grid-area: main;
   display: flex;
   flex-direction: column;
-  overflow-x: hidden;
+  /*overflow-x: hidden;*/
 }
 main .social {
   grid-area: social;
