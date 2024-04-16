@@ -285,12 +285,10 @@ main {
 			&.mobile,
 			&.recent-activity {
 				border-top: none;
-				
+				border-left: 1px solid $grey;
 			}
 			&.settings {
 				border-left: 1px solid $grey;
-				margin-top: 20px;
-
 			}
 		}
 	}
