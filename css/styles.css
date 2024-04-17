@@ -516,8 +516,7 @@ main .social .submodule-container .submodule {
     grid-template-areas: "tab tab" "traffic traffic" "daily mobile" "social social" "new-members recent-activity" "message settings";
   }
   main.show-alert {
-    display: grid;
-    width: 94vw;
+    grid-template-rows: 150px minmax(150px, auto);
   }
   main .tab {
     grid-area: tab;

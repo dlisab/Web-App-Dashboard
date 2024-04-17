@@ -63,8 +63,7 @@ Grid
 	}
     main {
 		&.show-alert {
-			display: grid;
-			width: 94vw;
+			grid-template-rows: 150px minmax(150px, auto);
 		}
 		.tab {
 			grid-area: tab;
