@@ -461,7 +461,6 @@ Grid
   display: grid;
   grid-template-columns: 1fr;
   grid-template-areas: "header" "nav" "main";
-  overflow-x: hidden;
 }
 
 header {
