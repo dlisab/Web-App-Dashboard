@@ -23,72 +23,73 @@ header {
 			&:hover {
 				cursor: pointer;
 			}
-
-			.notification-list {
-				display: none;
-				&.show-notification {
-					display: block;
-					z-index: 100;
-				}
-				@extend %bubble;
-				position: absolute;
+		}
+		.notification-list {
+			display: none;
+			&.show-notification {
+				display: block;
+				z-index: 100;
+			}
+			@extend %bubble;
+			position: absolute;
+			top: 32px;
+			right: -150px;
+			width: 300px;
+			@media (min-width: 768px){
 				top: 32px;
-				right: -150px;
-				width: 300px;
-				@media (min-width: 768px){
-					top: 32px;
-					right: 0;
-				}
+				right: 0;
+			}
 
-				ul {
-					list-style-type: none;
-					margin-left: 0;
-					margin-top: 0;
-					margin-bottom: 0;
-					&.nlist {
-						li {
-							padding: 10px;
-							border-bottom: 1px solid $grey;
-							&:last-child {
-								border-bottom: none;
-							}
-							&:hover {
-							  background-color: rgba(3,3,3, .1);
-							}
+			ul {
+				list-style-type: none;
+				margin-left: 0;
+				margin-top: 0;
+				margin-bottom: 0;
+				&.nlist {
+					li {
+						padding: 10px;
+						border-bottom: 1px solid $grey;
+						&:last-child {
+							border-bottom: none;
 						}
-						&.clearlist {
-							display: none;
+						&:hover {
+						  background-color: rgba(3,3,3, .1);
 						}
 					}
-					&.emptylist {
+					&.clearlist {
 						display: none;
-						li {
-							padding: 10px;
-							text-align: center;
-						}
-						&.clearlist {
-							display: block;
-						}
 					}
 				}
-				.clear-notifications {
-					float:right;
-					margin: 5px;
+				&.emptylist {
+					display: none;
+					li {
+						padding: 10px;
+						text-align: center;
+					}
+					&.clearlist {
+						display: block;
+					}
 				}
 			}
+			.clear-notifications {
+				float:right;
+				margin: 5px;
+			}
 		}
+	
 
 		.user {
 			display: flex;
 			flex-direction: row;
 			justify-content: flex-end;
 			align-items: center;
-		}
-		@media (min-width: 768px){
-			padding-right: 16px;
-		}
+			}
+			@media (min-width: 768px){
+				padding-right: 5px;
+			}
 	}
 }
+
 main {
 	.tab {
 		.search {
@@ -97,15 +98,15 @@ main {
 				.fa-search {
 				  position: absolute;
 				  top: 32%;
-			  	right: 7%;
+			  	  right: 7%;
 				  font-size: 15px;
 
 					&:hover {
 						cursor: pointer;
 					}
 				  @media (min-width: 768px){
-					  top: 27px;
-				  	right: 1%;
+						top: 27px;
+				  		right: 1%;
 				  }
 				}
 			}
@@ -115,6 +116,7 @@ main {
 	.notice{
 		display: block;
 		transition: all 1s ease-in-out;
+		margin-bottom: 20px;
 		&.hide {
 			display: none;
 		}
@@ -177,54 +179,10 @@ main {
 			border-top: 1px solid $grey;
 		}
 		&.new-members {
-			display:flex;
+			/*display:flex;
 			flex-direction: column;
-			grid-column-start: inherit;
+			grid-column-start: inherit;*/
 			.member-list {
-				.member {
-					border-bottom: 1px solid $grey;
-					padding-top: 10px;
-					padding-bottom: 10px;
-					display: flex;
-					flex-direction: column;
-					justify-content: center;
-					align-items: center;
-					text-align: center;
-					@media (min-width: 768px){
-						flex-direction: row;
-					justify-content: flex-start;
-					align-items: row;
-					text-align: left;
-					padding-bottom: 36px;
-					}
-					&:last-child {
-						border-bottom: none;
-					}
-					.user {
-						display: flex;
-						flex-direction: column;
-						justify-content: center;
-						@media (min-width: 768px){
-							flex-direction: row;
-						justify-content: flex-start;
-						align-items: row;
-						text-align: left;
-						}
-						.avatar {
-							margin: 0 15px 0 0;
-							display: inline-block;
-						}
-					}
-					.date {
-						@media (min-width: 768px){
-						margin-left: auto;
-						}
-					}
-				}
-			}
-		}
-		&.recent-activity {
-			.activity-list {
 				.member {
 					border-bottom: 1px solid $grey;
 					padding-top: 10px;
@@ -243,6 +201,36 @@ main {
 							display: inline-block;
 						}
 					}
+				.date {
+					margin-left:auto;
+
+					}
+				}
+			}
+		}
+	
+
+		&.recent-activity {
+			.activity-list {
+				.member {
+					.member {
+						border-bottom: 1px solid $grey;
+						padding-top: 10px;
+						padding-bottom: 10px;
+						display: flex;
+						flex-direction: row;
+						&:last-child {
+							border-bottom: none;
+						}
+						.user {
+							display: flex;
+							flex-direction: row;
+							justify-content: flex-start;
+							.avatar {
+								margin: 0 15px 0 0;
+								display: inline-block;
+							}
+						}
 					.more {
 						.arrow {
 							@extend %ico-arrow;
@@ -269,6 +257,7 @@ main {
 		.heading {
 			padding-right: 30px;
 			padding-left: 30px;
+			padding-top: 20px;
 		}
 		.search {
 			border-bottom: 1px solid $grey;
@@ -285,7 +274,7 @@ main {
 		background-color: $off-white;
 		border: 1px solid $grey;
 		border-radius: 5px;
-		padding: 20px;
+		padding: 10px;
 		margin-bottom: 20px;
 		.shares {
 			h4 {
@@ -297,15 +286,28 @@ main {
 			margin-bottom: 0;
 		}
 	}
-
-	.border-bottom {
-		border-bottom: 1px solid $grey;
-	}
-	.border-top {
-		border-top: 1px solid $grey;
-	}
-
-	.chart-container {
-		height: 300px;
-	}
 }
+			.border-bottom {
+				border-bottom: 1px solid $grey;
+
+			}
+			.border-top {
+				border-top: 1px solid $grey;
+			}
+			.memwrap {
+				display:grid;
+			}
+			
+
+			@media (min-width: 1024px){
+				.memwrap{
+					display: grid;
+					justify-content: space-between;
+					}	
+				}
+
+			.chart-container {
+					height: 300px;
+				}
+		}
+	}
