@@ -9,7 +9,7 @@ header{
 	.user-notifications {
 		display: flex;
 		flex-direction: column;
-	  svg.bell {
+		svg.bell {
 			width: 20px;
 			margin: 0 auto;
 			max-height: 20px;
@@ -26,6 +26,9 @@ header{
 			}
 			&:hover, &.fill-bell {
 				cursor: pointer;
+				width:30px;
+				transition: width .5s;
+				
 				path {
 				 &.default {
 						opacity: 0;
