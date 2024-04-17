@@ -29,14 +29,14 @@ button, [class^=btn--] {
   margin: 0 auto;
 }
 
-header .user-header .notification-list {
+header .user-header .user-notifications .notification-list {
   color: #333333;
   position: relative;
   background: #fbfbfb;
   border: 2px solid #cccccc;
   border-radius: 3px;
 }
-header .user-header .notification-list:after, header .user-header .notification-list:before {
+header .user-header .user-notifications .notification-list:after, header .user-header .user-notifications .notification-list:before {
   bottom: 100%;
   left: 50%;
   border: solid transparent;
@@ -46,30 +46,30 @@ header .user-header .notification-list:after, header .user-header .notification-
   position: absolute;
 }
 @media (min-width: 768px) {
-  header .user-header .notification-list:after, header .user-header .notification-list:before {
+  header .user-header .user-notifications .notification-list:after, header .user-header .user-notifications .notification-list:before {
     left: 100%;
   }
 }
-header .user-header .notification-list:after {
+header .user-header .user-notifications .notification-list:after {
   border-color: rgba(251, 251, 251, 0);
   border-bottom-color: #fbfbfb;
   border-width: 7px;
   margin-left: -30px;
 }
-header .user-header .notification-list:before {
+header .user-header .user-notifications .notification-list:before {
   border-color: rgba(204, 204, 204, 0);
   border-bottom-color: #cccccc;
   border-width: 10px;
   margin-left: -33px;
 }
 
-main .module.recent-activity .activity-list .member .member .more .arrow {
+main .module.recent-activity .activity-list .member .more .arrow {
   border: solid #7477bf;
   border-width: 0 2px 2px 0;
   display: inline-block;
   padding: 5px;
 }
-main .module.recent-activity .activity-list .member .member .more .right.arrow {
+main .module.recent-activity .activity-list .member .more .right.arrow {
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
 }
@@ -1150,53 +1150,53 @@ header .user-header .user-notifications .notification-dot {
 header .user-header .user-notifications:hover {
   cursor: pointer;
 }
-header .user-header .notification-list {
+header .user-header .user-notifications .notification-list {
   display: none;
   position: absolute;
   top: 32px;
   right: -150px;
   width: 300px;
 }
-header .user-header .notification-list.show-notification {
+header .user-header .user-notifications .notification-list.show-notification {
   display: block;
   z-index: 100;
 }
 @media (min-width: 768px) {
-  header .user-header .notification-list {
+  header .user-header .user-notifications .notification-list {
     top: 32px;
     right: 0;
   }
 }
-header .user-header .notification-list ul {
+header .user-header .user-notifications .notification-list ul {
   list-style-type: none;
   margin-left: 0;
   margin-top: 0;
   margin-bottom: 0;
 }
-header .user-header .notification-list ul.nlist li {
+header .user-header .user-notifications .notification-list ul.nlist li {
   padding: 10px;
   border-bottom: 1px solid #cccccc;
 }
-header .user-header .notification-list ul.nlist li:last-child {
+header .user-header .user-notifications .notification-list ul.nlist li:last-child {
   border-bottom: none;
 }
-header .user-header .notification-list ul.nlist li:hover {
+header .user-header .user-notifications .notification-list ul.nlist li:hover {
   background-color: rgba(3, 3, 3, 0.1);
 }
-header .user-header .notification-list ul.nlist.clearlist {
+header .user-header .user-notifications .notification-list ul.nlist.clearlist {
   display: none;
 }
-header .user-header .notification-list ul.emptylist {
+header .user-header .user-notifications .notification-list ul.emptylist {
   display: none;
 }
-header .user-header .notification-list ul.emptylist li {
+header .user-header .user-notifications .notification-list ul.emptylist li {
   padding: 10px;
   text-align: center;
 }
-header .user-header .notification-list ul.emptylist.clearlist {
+header .user-header .user-notifications .notification-list ul.emptylist.clearlist {
   display: block;
 }
-header .user-header .notification-list .clear-notifications {
+header .user-header .user-notifications .notification-list .clear-notifications {
   float: right;
   margin: 5px;
 }
@@ -1208,7 +1208,7 @@ header .user-header .user {
 }
 @media (min-width: 768px) {
   header .user-header {
-    padding-right: 5px;
+    padding-right: 16px;
   }
 }
 
@@ -1233,7 +1233,6 @@ main .tab .search .search-form .fa-search:hover {
 main .notice {
   display: block;
   transition: all 1s ease-in-out;
-  margin-bottom: 20px;
 }
 main .notice.hide {
   display: none;
@@ -1308,65 +1307,64 @@ main .module.new-members .member-list .member .user .avatar {
 main .module.new-members .member-list .member .date {
   margin-left: auto;
 }
-main .module.recent-activity .activity-list .member .member {
+main .module.recent-activity .activity-list .member {
   border-bottom: 1px solid #cccccc;
   padding-top: 10px;
   padding-bottom: 10px;
   display: flex;
   flex-direction: row;
 }
-main .module.recent-activity .activity-list .member .member:last-child {
+main .module.recent-activity .activity-list .member:last-child {
   border-bottom: none;
 }
-main .module.recent-activity .activity-list .member .member .user {
+main .module.recent-activity .activity-list .member .user {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
 }
-main .module.recent-activity .activity-list .member .member .user .avatar {
+main .module.recent-activity .activity-list .member .user .avatar {
   margin: 0 15px 0 0;
   display: inline-block;
 }
-main .module.recent-activity .activity-list .member .member .more {
+main .module.recent-activity .activity-list .member .more {
   margin-left: auto;
 }
 @media (min-width: 768px) {
-  main .module.recent-activity.mobile, main .module.recent-activity.recent-activity {
+  main .module.mobile, main .module.recent-activity {
     border-top: none;
     border-left: 1px solid #cccccc;
   }
-  main .module.recent-activity.settings {
+  main .module.settings {
     border-left: 1px solid #cccccc;
   }
 }
-main .module .tab .heading {
+main .tab .heading {
   padding-right: 30px;
   padding-left: 30px;
-  padding-top: 20px;
 }
-main .module .tab .search {
+main .tab .search {
   border-bottom: 1px solid #cccccc;
 }
 @media (min-width: 768px) {
-  main .module .tab .search {
+  main .tab .search {
     background-color: #fbfbfb;
     border-left: 1px solid #cccccc;
     padding-right: 30px;
   }
 }
-main .module .submodule {
+main .submodule {
   background-color: #fbfbfb;
   border: 1px solid #cccccc;
   border-radius: 5px;
-  padding: 10px;
+  padding: 20px;
   margin-bottom: 20px;
 }
-main .module .submodule .shares h4 {
+main .submodule .shares h4 {
   color: #7477bf;
   margin: 0;
 }
 @media (min-width: 768px) {
-  main .module .submodule {
+  main .submodule {
     margin-bottom: 0;
   }
 }
@@ -1375,15 +1373,6 @@ main .border-bottom {
 }
 main .border-top {
   border-top: 1px solid #cccccc;
-}
-main .memwrap {
-  display: grid;
-}
-@media (min-width: 1024px) {
-  main .memwrap {
-    display: grid;
-    justify-content: space-between;
-  }
 }
 main .chart-container {
   height: 300px;
