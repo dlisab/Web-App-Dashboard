@@ -213,24 +213,23 @@ main {
 		&.recent-activity {
 			.activity-list {
 				.member {
-					.member {
-						border-bottom: 1px solid $grey;
-						padding-top: 10px;
-						padding-bottom: 10px;
+					border-bottom: 1px solid $grey;
+					padding-top: 10px;
+					padding-bottom: 10px;
+					display: flex;
+					flex-direction: row;
+					&:last-child {
+						border-bottom: none;
+					}
+					.user {
 						display: flex;
 						flex-direction: row;
-						&:last-child {
-							border-bottom: none;
+						justify-content: flex-start;
+						.avatar {
+							margin: 0 15px 0 0;
+							display: inline-block;
 						}
-						.user {
-							display: flex;
-							flex-direction: row;
-							justify-content: flex-start;
-							.avatar {
-								margin: 0 15px 0 0;
-								display: inline-block;
-							}
-						}
+					}
 					.more {
 						.arrow {
 							@extend %ico-arrow;
@@ -257,7 +256,6 @@ main {
 		.heading {
 			padding-right: 30px;
 			padding-left: 30px;
-			padding-top: 20px;
 		}
 		.search {
 			border-bottom: 1px solid $grey;
@@ -274,7 +272,7 @@ main {
 		background-color: $off-white;
 		border: 1px solid $grey;
 		border-radius: 5px;
-		padding: 10px;
+		padding: 20px;
 		margin-bottom: 20px;
 		.shares {
 			h4 {
@@ -286,28 +284,15 @@ main {
 			margin-bottom: 0;
 		}
 	}
+
+	.border-bottom {
+		border-bottom: 1px solid $grey;
+	}
+	.border-top {
+		border-top: 1px solid $grey;
+	}
+
+	.chart-container {
+		height: 300px;
+	}
 }
-			.border-bottom {
-				border-bottom: 1px solid $grey;
-
-			}
-			.border-top {
-				border-top: 1px solid $grey;
-			}
-			.memwrap {
-				display:grid;
-			}
-			
-
-			@media (min-width: 1024px){
-				.memwrap{
-					display: grid;
-					justify-content: space-between;
-					}	
-				}
-
-			.chart-container {
-					height: 300px;
-				}
-		}
-	
