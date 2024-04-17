@@ -120,6 +120,11 @@ html {
 /**
  * Remove the margin in all browsers.
  */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 body {
   margin: 0;
 }
