@@ -63,13 +63,13 @@ header .user-header .notification-list:before {
   margin-left: -33px;
 }
 
-main .module.new-members .member-list.recent-activity .activity-list .member .member .more .arrow {
+main .module.recent-activity .activity-list .member .member .more .arrow {
   border: solid #7477bf;
   border-width: 0 2px 2px 0;
   display: inline-block;
   padding: 5px;
 }
-main .module.new-members .member-list.recent-activity .activity-list .member .member .more .right.arrow {
+main .module.recent-activity .activity-list .member .member .more .right.arrow {
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
 }
@@ -1313,83 +1313,83 @@ main .module.new-members .member-list .member .user .avatar {
 main .module.new-members .member-list .member .date {
   margin-left: auto;
 }
-main .module.new-members .member-list.recent-activity .activity-list .member .member {
+main .module.recent-activity .activity-list .member .member {
   border-bottom: 1px solid #cccccc;
   padding-top: 10px;
   padding-bottom: 10px;
   display: flex;
   flex-direction: row;
 }
-main .module.new-members .member-list.recent-activity .activity-list .member .member:last-child {
+main .module.recent-activity .activity-list .member .member:last-child {
   border-bottom: none;
 }
-main .module.new-members .member-list.recent-activity .activity-list .member .member .user {
+main .module.recent-activity .activity-list .member .member .user {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
 }
-main .module.new-members .member-list.recent-activity .activity-list .member .member .user .avatar {
+main .module.recent-activity .activity-list .member .member .user .avatar {
   margin: 0 15px 0 0;
   display: inline-block;
 }
-main .module.new-members .member-list.recent-activity .activity-list .member .member .more {
+main .module.recent-activity .activity-list .member .member .more {
   margin-left: auto;
 }
 @media (min-width: 768px) {
-  main .module.new-members .member-list.recent-activity.mobile, main .module.new-members .member-list.recent-activity.recent-activity {
+  main .module.recent-activity.mobile, main .module.recent-activity.recent-activity {
     border-top: none;
     border-left: 1px solid #cccccc;
   }
-  main .module.new-members .member-list.recent-activity.settings {
+  main .module.recent-activity.settings {
     border-left: 1px solid #cccccc;
   }
 }
-main .module.new-members .member-list .tab .heading {
+main .module .tab .heading {
   padding-right: 30px;
   padding-left: 30px;
   padding-top: 20px;
 }
-main .module.new-members .member-list .tab .search {
+main .module .tab .search {
   border-bottom: 1px solid #cccccc;
 }
 @media (min-width: 768px) {
-  main .module.new-members .member-list .tab .search {
+  main .module .tab .search {
     background-color: #fbfbfb;
     border-left: 1px solid #cccccc;
     padding-right: 30px;
   }
 }
-main .module.new-members .member-list .submodule {
+main .module .submodule {
   background-color: #fbfbfb;
   border: 1px solid #cccccc;
   border-radius: 5px;
   padding: 10px;
   margin-bottom: 20px;
 }
-main .module.new-members .member-list .submodule .shares h4 {
+main .module .submodule .shares h4 {
   color: #7477bf;
   margin: 0;
 }
 @media (min-width: 768px) {
-  main .module.new-members .member-list .submodule {
+  main .module .submodule {
     margin-bottom: 0;
   }
 }
-main .module.new-members .border-bottom {
+main .border-bottom {
   border-bottom: 1px solid #cccccc;
 }
-main .module.new-members .border-top {
+main .border-top {
   border-top: 1px solid #cccccc;
 }
-main .module.new-members .memwrap {
+main .memwrap {
   display: grid;
 }
 @media (min-width: 1024px) {
-  main .module.new-members .memwrap {
+  main .memwrap {
     display: grid;
     justify-content: space-between;
   }
 }
-main .module.new-members .chart-container {
+main .chart-container {
   height: 300px;
 }

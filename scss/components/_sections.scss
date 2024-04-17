@@ -192,18 +192,20 @@ main {
 					&:last-child {
 						border-bottom: none;
 					}
-			.user {
-				display: flex;
-				flex-direction: row;
-				justify-content: flex-start;
-				.avatar {
-					margin: 0 15px 0 0;
-					display: inline-block;
-				}
-			}
-			.date {
-				margin-left:auto;
+					.user {
+						display: flex;
+						flex-direction: row;
+						justify-content: flex-start;
+						.avatar {
+							margin: 0 15px 0 0;
+							display: inline-block;
+						}
+					}
+				.date {
+					margin-left:auto;
 
+					}
+				}
 			}
 		}
 	
@@ -308,5 +310,4 @@ main {
 					height: 300px;
 				}
 		}
-	}
-}
+	
