@@ -179,9 +179,6 @@ main {
 			border-top: 1px solid $grey;
 		}
 		&.new-members {
-			/*display:flex;
-			flex-direction: column;
-			grid-column-start: inherit;*/
 			.member-list {
 				.member {
 					border-bottom: 1px solid $grey;
@@ -201,14 +198,13 @@ main {
 							display: inline-block;
 						}
 					}
-				.date {
-					margin-left:auto;
+					.date {
+						margin-left:auto;
 
 					}
 				}
 			}
 		}
-	
 
 		&.recent-activity {
 			.activity-list {
