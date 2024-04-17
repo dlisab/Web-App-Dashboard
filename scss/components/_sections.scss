@@ -30,7 +30,7 @@ header {
 					display: block;
 					z-index: 100;
 				}
-				/*@extend %bubble;
+				@extend %bubble;
 				position: absolute;
 				top: 32px;
 				right: -150px;
@@ -39,7 +39,7 @@ header {
 					top: 32px;
 					right: 0;
 				}
-*/
+
 				ul {
 					list-style-type: none;
 					margin-left: 0;
