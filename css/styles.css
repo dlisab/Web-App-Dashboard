@@ -29,14 +29,14 @@ button, [class^=btn--] {
   margin: 0 auto;
 }
 
-header .user-header .user-notifications .notification-list {
+header .user-header .notification-list {
   color: #333333;
   position: relative;
   background: #fbfbfb;
   border: 2px solid #cccccc;
   border-radius: 3px;
 }
-header .user-header .user-notifications .notification-list:after, header .user-header .user-notifications .notification-list:before {
+header .user-header .notification-list:after, header .user-header .notification-list:before {
   bottom: 100%;
   left: 50%;
   border: solid transparent;
@@ -46,17 +46,17 @@ header .user-header .user-notifications .notification-list:after, header .user-h
   position: absolute;
 }
 @media (min-width: 768px) {
-  header .user-header .user-notifications .notification-list:after, header .user-header .user-notifications .notification-list:before {
+  header .user-header .notification-list:after, header .user-header .notification-list:before {
     left: 100%;
   }
 }
-header .user-header .user-notifications .notification-list:after {
+header .user-header .notification-list:after {
   border-color: rgba(251, 251, 251, 0);
   border-bottom-color: #fbfbfb;
   border-width: 7px;
   margin-left: -30px;
 }
-header .user-header .user-notifications .notification-list:before {
+header .user-header .notification-list:before {
   border-color: rgba(204, 204, 204, 0);
   border-bottom-color: #cccccc;
   border-width: 10px;
@@ -1211,53 +1211,53 @@ header .user-header .user-notifications .notification-dot {
 header .user-header .user-notifications:hover {
   cursor: pointer;
 }
-header .user-header .user-notifications .notification-list {
+header .user-header .notification-list {
   display: none;
   position: absolute;
   top: 32px;
   right: -150px;
   width: 300px;
 }
-header .user-header .user-notifications .notification-list.show-notification {
+header .user-header .notification-list.show-notification {
   display: block;
   z-index: 100;
 }
 @media (min-width: 768px) {
-  header .user-header .user-notifications .notification-list {
+  header .user-header .notification-list {
     top: 32px;
     right: 0;
   }
 }
-header .user-header .user-notifications .notification-list ul {
+header .user-header .notification-list ul {
   list-style-type: none;
   margin-left: 0;
   margin-top: 0;
   margin-bottom: 0;
 }
-header .user-header .user-notifications .notification-list ul.nlist li {
+header .user-header .notification-list ul.nlist li {
   padding: 10px;
   border-bottom: 1px solid #cccccc;
 }
-header .user-header .user-notifications .notification-list ul.nlist li:last-child {
+header .user-header .notification-list ul.nlist li:last-child {
   border-bottom: none;
 }
-header .user-header .user-notifications .notification-list ul.nlist li:hover {
+header .user-header .notification-list ul.nlist li:hover {
   background-color: rgba(3, 3, 3, 0.1);
 }
-header .user-header .user-notifications .notification-list ul.nlist.clearlist {
+header .user-header .notification-list ul.nlist.clearlist {
   display: none;
 }
-header .user-header .user-notifications .notification-list ul.emptylist {
+header .user-header .notification-list ul.emptylist {
   display: none;
 }
-header .user-header .user-notifications .notification-list ul.emptylist li {
+header .user-header .notification-list ul.emptylist li {
   padding: 10px;
   text-align: center;
 }
-header .user-header .user-notifications .notification-list ul.emptylist.clearlist {
+header .user-header .notification-list ul.emptylist.clearlist {
   display: block;
 }
-header .user-header .user-notifications .notification-list .clear-notifications {
+header .user-header .notification-list .clear-notifications {
   float: right;
   margin: 5px;
 }
@@ -1269,7 +1269,7 @@ header .user-header .user {
 }
 @media (min-width: 768px) {
   header .user-header {
-    padding-right: 16px;
+    padding-right: 5px;
   }
 }
 
@@ -1294,6 +1294,7 @@ main .tab .search .search-form .fa-search:hover {
 main .notice {
   display: block;
   transition: all 1s ease-in-out;
+  margin-bottom: 20px;
 }
 main .notice.hide {
   display: none;
@@ -1345,6 +1346,11 @@ main .module.traffic .traffic-header .traffic-type .traffic-filter.active {
 }
 main .module.mobile, main .module.recent-activity, main .module.message, main .module.settings {
   border-top: 1px solid #cccccc;
+}
+main .module.new-members {
+  /*display:flex;
+  flex-direction: column;
+  grid-column-start: inherit;*/
 }
 main .module.new-members .member-list .member {
   border-bottom: 1px solid #cccccc;
