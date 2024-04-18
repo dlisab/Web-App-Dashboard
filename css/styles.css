@@ -1443,4 +1443,5 @@ main .border-top {
 }
 main .chart-container {
   height: 300px;
+  width: 100%;
 }
