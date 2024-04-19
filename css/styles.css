@@ -1319,9 +1319,9 @@ main .notice .alert .closebtn {
 }
 main .module {
   padding-top: 30px;
-  padding-bottom: 5px;
+  padding-bottom: 30px;
   padding-right: 5px;
-  padding-left: 30px;
+  padding-left: 5px;
 }
 main .module.traffic .traffic-header {
   display: flex;
