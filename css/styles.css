@@ -515,7 +515,7 @@ ul {
 :: Grid Styles
 -------------------------------------------------- */
 /*--------------------------------------------------
-Grid
+:: Grid
 -------------------------------------------------- */
 .container {
   display: grid;
@@ -524,7 +524,7 @@ Grid
 }
 
 header {
-  padding: 30px;
+  padding: 15px;
   background-color: #7477bf;
   grid-area: header;
   align-items: center;
@@ -542,7 +542,6 @@ main {
   grid-area: main;
   display: flex;
   flex-direction: column;
-  /*overflow-x: hidden;*/
 }
 main .social {
   grid-area: social;
@@ -571,13 +570,7 @@ main .social .submodule-container .submodule {
     grid-template-columns: 3fr 1fr;
   }
   main {
-    /*.traffic {grid-area: traffic;
-    	grid-column: 1 / span 2;}
-    	.daily {grid-area: daily;
-    	grid-column: 1 / span 1;}
-    	.mobile {grid-area: mobile;}
-    	grid-column: 2 /span 1;
-    	*/
+    grid-column: 2/span 1;
     grid-template-columns: 50% 50%;
     grid-template-areas: "tab tab" "traffic traffic" "daily mobile" "social social" "new-members recent-activity" "message settings";
   }
@@ -604,9 +597,11 @@ main .social .submodule-container .submodule {
   }
   main .traffic {
     grid-area: traffic;
+    grid-column: 1/span 2;
   }
   main .daily {
     grid-area: daily;
+    grid-column: 1/span 1;
   }
   main .mobile {
     grid-area: mobile;
@@ -1324,8 +1319,8 @@ main .notice .alert .closebtn {
 }
 main .module {
   padding-top: 30px;
-  padding-bottom: 30px;
-  padding-right: 30px;
+  padding-bottom: 5px;
+  padding-right: 5px;
   padding-left: 30px;
 }
 main .module.traffic .traffic-header {
