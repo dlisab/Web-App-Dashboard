@@ -1407,8 +1407,17 @@ main .module.recent-activity .activity-list .member:last-child {
 }
 main .module.recent-activity .activity-list .member .user {
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  main .module.recent-activity .activity-list .member .user {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: row;
+    text-align: left;
+  }
 }
 main .module.recent-activity .activity-list .member .user .avatar {
   margin: 0 15px 0 0;
