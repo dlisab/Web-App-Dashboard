@@ -166,9 +166,13 @@ main {
 						font-size: 14px;
 						font-weight: normal;
 						&.active {
-							background-color: $green;
-							color: $white;
-							border-radius: 50px / 50px;
+							li {
+								padding: 10px;
+								&.active, &:hover {
+									cursor: pointer;
+									border-bottom: 5px solid #85db80;
+								padding-bottom: 3.5%;
+								}
 						}
 					}
 				}
