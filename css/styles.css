@@ -1307,6 +1307,7 @@ main .notice .alert {
   border-radius: 5px;
   background-color: #7477bf;
   color: #ffffff;
+  width: 100%;
 }
 main .notice .alert .closebtn {
   padding-left: 15px;
