@@ -1398,7 +1398,7 @@ main .module.new-members .member-list .member .user .avatar {
 main .module.recent-activity .activity-list .member {
   border-bottom: 1px solid #cccccc;
   padding-top: 10px;
-  padding-bottom: 36px;
+  padding-bottom: 10px;
   display: flex;
   flex-direction: column;
 }
