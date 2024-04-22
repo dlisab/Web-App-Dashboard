@@ -154,7 +154,7 @@ document.addEventListener("click", function (e) {
 }
 
 /*An array containing all the country names in the world:*/
-var users = ['Victoria Chambers', 'Dale Byrd', 'Dawn Wood', 'Dan Oliver'];
+var users = ['Victoria Chambers', 'Dale Byrd', 'Dawn Wood', 'Dan Oliver', 'John Doe', 'Jane Doe'];
 
 /*initiate the autocomplete function on the "myInput" element, and pass along the countries array as possible autocomplete values:*/
 autocomplete(document.getElementById("myInput"), users);

@@ -20,6 +20,15 @@ var users = [
           email: 'dan.oliver82@example.com',
           avatar: 'member-4.jpg'
       },
-      
+      {
+		name: 'John Doe',
+		email: 'john-doe@example.com',
+		avatar: ''
+	},
+	{
+		name: 'Jane Doe',
+		email: 'jane-doe@example.com',
+		avatar: ''
+	},
   ];
   
