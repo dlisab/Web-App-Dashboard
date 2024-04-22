@@ -188,28 +188,43 @@ main {
 					padding-top: 10px;
 					padding-bottom: 10px;
 					display: flex;
-					flex-direction: row;
+					flex-direction: column;
+					justify-content: center;
+					align-items: center;
+					text-align: center;
+					@media (min-width: 768px){
+						flex-direction: row;
+					justify-content: flex-start;
+					align-items: row;
+					text-align: left;
+					padding-bottom: 36px;
+					}
 					&:last-child {
 						border-bottom: none;
 					}
 					.user {
 						display: flex;
-						flex-direction: row;
+						flex-direction: column;
+						justify-content: center;
+						@media (min-width: 768px){
+							flex-direction: row;
 						justify-content: flex-start;
+						align-items: row;
+						text-align: left;
+						}
 						.avatar {
 							margin: 0 15px 0 0;
 							display: inline-block;
 						}
 					}
-				.date {
-					margin-left:auto;
-
+					.date {
+						@media (min-width: 768px){
+						margin-left: auto;
+						}
 					}
 				}
 			}
 		}
-	
-
 		&.recent-activity {
 			.activity-list {
 				.member {
