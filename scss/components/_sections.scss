@@ -181,12 +181,15 @@ main {
 				}				
 			}
 		}
+
 		&.mobile,
 		&.recent-activity,
 		&.message,
 		&.settings {
 			border-top: 1px solid $grey;
 		}
+	}
+
 		&.new-members {
 			/*display:flex;
 			flex-direction: column;
@@ -281,7 +284,8 @@ main {
 				border-left: 1px solid $grey;
 			}
 		}
-	}
+	
+
 
 	.tab {
 		.heading {
@@ -326,4 +330,4 @@ main {
 	.chart-container {
 		width: 100%;
 	}
-}
+
