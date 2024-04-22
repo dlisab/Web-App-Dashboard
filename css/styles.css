@@ -855,9 +855,10 @@ header .user-notifications svg.bell:hover path.fill, header .user-notifications 
   opacity: 1;
 }
 header .avatar img {
-  margin: 0 10px 0 0;
+  margin: 0 15px 0 0;
   border-radius: 50%;
   max-width: 30px;
+  display: inline-block;
 }
 
 nav img[src$=".svg"] {
