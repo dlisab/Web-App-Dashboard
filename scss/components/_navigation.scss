@@ -10,7 +10,7 @@ nav {
 		align-content: center;
 		flex-grow: 1;
 		li {
-			padding: 0;
+			padding: 10;
 			width: 10%;
 			&.active, &:hover {
 				cursor: pointer;

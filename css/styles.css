@@ -759,7 +759,7 @@ nav ul {
   flex-grow: 1;
 }
 nav ul li {
-  padding: 0;
+  padding: 10;
   width: 10%;
 }
 nav ul li.active, nav ul li:hover {
