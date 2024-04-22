@@ -21,19 +21,11 @@ nav {
 	}
 }
 
+
 @media (min-width: 768px) {
 	nav {
-		display:flex;
 		ul {
-			flex-direction: column;
-			justify-content: flex-start;
-			flex-grow: 1;
 			li {
-				padding-top: 30%;
-				padding-bottom:30%;
-				padding-left: 2%;
-				padding-right: 2%;
-				width: 100%;
 				&.active, &:hover {
 	    		padding-bottom: 1.5%;
 				}
@@ -53,7 +45,6 @@ nav {
 				margin-bottom: 50px;
 				padding: 10px;
 				border-left: 5px solid $purple;
-				width: 90%;
 				&.active {
 					padding-bottom: 10px;
 					border-bottom:none;
