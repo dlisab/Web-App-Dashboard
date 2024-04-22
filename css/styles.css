@@ -1294,6 +1294,7 @@ main .notice {
   display: block;
   transition: all 1s ease-in-out;
   margin-bottom: 20px;
+  width: 100%;
 }
 main .notice.hide {
   display: none;
@@ -1342,6 +1343,11 @@ main .module.traffic .traffic-header .traffic-type .traffic-filter.active {
   background-color: #85db80;
   color: #ffffff;
   border-radius: 50px/50px;
+}
+@media (min-width: 1024px) {
+  main .module.traffic .traffic-type {
+    padding-right: 42px;
+  }
 }
 main .module.mobile, main .module.recent-activity, main .module.message, main .module.settings {
   border-top: 1px solid #cccccc;
@@ -1472,5 +1478,5 @@ main .border-top {
   border-top: 1px solid #cccccc;
 }
 main .chart-container {
-  width: 95%;
+  width: 100%;
 }
