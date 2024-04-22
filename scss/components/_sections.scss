@@ -240,17 +240,16 @@ main {
 						display: flex;
 						flex-direction: column;
 						justify-content: center;
-						text-align: center;
 						@media (min-width: 768px){
 							flex-direction: row;
 						justify-content: flex-start;
 						align-items: row;
-						text-align: left;}
+						text-align: left;
+						}
 						.avatar {
 							margin: 0 15px 0 0;
 							display: inline-block;
 						}
-					}
 					.more {
 						.arrow {
 							@extend %ico-arrow;
