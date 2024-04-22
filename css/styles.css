@@ -1398,9 +1398,9 @@ main .module.new-members .member-list .member .user .avatar {
 main .module.recent-activity .activity-list .member {
   border-bottom: 1px solid #cccccc;
   padding-top: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 36px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 main .module.recent-activity .activity-list .member:last-child {
   border-bottom: none;
