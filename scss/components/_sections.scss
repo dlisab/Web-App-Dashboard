@@ -244,8 +244,13 @@ main {
 					padding-top: 10px;
 					padding-bottom: 10px;
 					display: flex;
-					flex-direction: row;
-					
+					flex-direction: column;
+					@media (min-width: 1024px){
+						display: flex;
+						flex-direction: column;
+					}
+
+
 					&:last-child {
 						border-bottom: none;
 					}
