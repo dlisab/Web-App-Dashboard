@@ -4,7 +4,7 @@ header {
 		flex-direction: row;
 		justify-content: flex-end;
 		align-items: center;
-
+ 
 		.user-notifications {
 			border-right: 1px solid #5d61bf;
 			padding: 0 15px 0 0;
@@ -244,7 +244,9 @@ main {
 					padding-top: 10px;
 					padding-bottom: 10px;
 					display: flex;
-					
+					@media (min-width: 1024px){
+						display: flex;
+						flex-direction: column;
 					}
 
 
