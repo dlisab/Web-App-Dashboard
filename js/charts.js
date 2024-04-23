@@ -18,33 +18,7 @@ let trafficData = {
     }]
     };
 
-    var context = document.querySelector('#trafficOverview').getContext('2d');
-var chartParams = {
-	type: 'line',
-	data: chartData,
-	options: {
-		responsive: true,
-		maintainAspectRatio: false,
-		elements: {
-	      line: {
-	        tension: 0,
-	      }
-	  	},
-	    scales: {
-	         yAxes: [{
-	             ticks: {
-	                 beginAtZero:true
-	             }
-	         }]
-	     },
-	     legend: {
-	            display: false
-	         },
-	         tooltips: {
-	            enabled: false
-	         },
-		}
-};
+    
 let trafficOptions = {
     backgroundColor: 'rgba(112, 104, 201, .5)',
     fill: true,
