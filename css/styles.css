@@ -1398,6 +1398,7 @@ main .module.recent-activity .activity-list .member {
   padding-top: 10px;
   padding-bottom: 10px;
   display: flex;
+  flex-direction: column;
 }
 main .module.recent-activity .activity-list .member:last-child {
   border-bottom: none;

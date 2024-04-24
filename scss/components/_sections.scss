@@ -229,9 +229,7 @@ main {
 					padding-top: 10px;
 					padding-bottom: 10px;
 					display: flex;
-					
-					
-  
+					flex-direction: column;
 					&:last-child {
 						border-bottom: none;
 					}
