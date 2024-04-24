@@ -1268,7 +1268,7 @@ header .user-header .user {
 }
 @media (min-width: 768px) {
   header .user-header {
-    padding-right: 16px;
+    padding-right: 5px;
   }
 }
 
@@ -1362,7 +1362,7 @@ main .module.new-members .member-list .member {
   padding-top: 10px;
   padding-bottom: 10px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -1381,8 +1381,18 @@ main .module.new-members .member-list .member:last-child {
 }
 main .module.new-members .member-list .member .user {
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  /*added this content in for testing*/
+  /*added this content in for testing-end*/
+}
+@media (min-width: 768px) {
+  main .module.new-members .member-list .member .user {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: row;
+    text-align: left;
+  }
 }
 main .module.new-members .member-list .member .user .avatar {
   margin: 0 15px 0 0;
@@ -1398,7 +1408,7 @@ main .module.recent-activity .activity-list .member {
   padding-top: 10px;
   padding-bottom: 10px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
 main .module.recent-activity .activity-list .member:last-child {
   border-bottom: none;
