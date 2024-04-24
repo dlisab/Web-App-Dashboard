@@ -63,13 +63,13 @@ header .user-header .notification-list:before {
   margin-left: -33px;
 }
 
-main .module.recent-activity .activity-list .member .more .arrow {
+main .module.traffic.recent-activity .activity-list .member .more .arrow {
   border: solid #7477bf;
   border-width: 0 2px 2px 0;
   display: inline-block;
   padding: 5px;
 }
-main .module.recent-activity .activity-list .member .more .right.arrow {
+main .module.traffic.recent-activity .activity-list .member .more .right.arrow {
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
 }
@@ -1325,6 +1325,15 @@ main .module {
   padding-right: 20px;
   padding-left: 20px;
 }
+main .module.traffic {
+  /*@media (min-width: 1024px){
+  	.traffic-type {
+  	padding-right: 42px;
+  		}				
+  	}
+  }
+  */
+}
 main .module.traffic .traffic-header {
   display: flex;
   flex-direction: row;
@@ -1345,20 +1354,15 @@ main .module.traffic .traffic-header .traffic-type .traffic-filter.active {
   color: #ffffff;
   border-radius: 50px/50px;
 }
-@media (min-width: 1024px) {
-  main .module.traffic .traffic-type {
-    padding-right: 42px;
-  }
-}
-main .module.mobile, main .module.recent-activity, main .module.message, main .module.settings {
+main .module.traffic.mobile, main .module.traffic.recent-activity, main .module.traffic.message, main .module.traffic.settings {
   border-top: 1px solid #cccccc;
 }
-main .module.new-members {
+main .module.traffic.new-members {
   /*display:flex;
   flex-direction: column;
   grid-column-start: inherit;*/
 }
-main .module.new-members .member-list .member {
+main .module.traffic.new-members .member-list .member {
   border-bottom: 1px solid #cccccc;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -1369,7 +1373,7 @@ main .module.new-members .member-list .member {
   text-align: center;
 }
 @media (min-width: 768px) {
-  main .module.new-members .member-list .member {
+  main .module.traffic.new-members .member-list .member {
     flex-direction: row;
     justify-content: flex-start;
     align-items: row;
@@ -1377,80 +1381,85 @@ main .module.new-members .member-list .member {
     padding-bottom: 36px;
   }
 }
-main .module.new-members .member-list .member:last-child {
+main .module.traffic.new-members .member-list .member:last-child {
   border-bottom: none;
 }
-main .module.new-members .member-list .member .user {
+main .module.traffic.new-members .member-list .member .user {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 @media (min-width: 768px) {
-  main .module.new-members .member-list .member .user {
+  main .module.traffic.new-members .member-list .member .user {
     flex-direction: row;
     justify-content: flex-start;
     align-items: row;
     text-align: left;
   }
 }
-main .module.new-members .member-list .member .user .avatar {
+main .module.traffic.new-members .member-list .member .user .avatar {
   margin: 0 15px 0 0;
   display: inline-block;
 }
 @media (min-width: 768px) {
-  main .module.new-members .member-list .member .date {
+  main .module.traffic.new-members .member-list .member .date {
     margin-left: auto;
   }
 }
-main .module.recent-activity .activity-list .member {
+main .module.traffic.recent-activity .activity-list .member {
   border-bottom: 1px solid #cccccc;
   padding-top: 10px;
   padding-bottom: 10px;
   display: flex;
   flex-direction: column;
 }
-main .module.recent-activity .activity-list .member:last-child {
+@media (min-width: 1024px) {
+  main .module.traffic.recent-activity .activity-list .member {
+    display: flex;
+  }
+}
+main .module.traffic.recent-activity .activity-list .member:last-child {
   border-bottom: none;
 }
-main .module.recent-activity .activity-list .member .user {
+main .module.traffic.recent-activity .activity-list .member .user {
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
 }
 @media (min-width: 768px) {
-  main .module.recent-activity .activity-list .member .user {
+  main .module.traffic.recent-activity .activity-list .member .user {
     flex-direction: row;
     justify-content: flex-start;
     align-items: row;
     text-align: left;
   }
 }
-main .module.recent-activity .activity-list .member .user .avatar {
+main .module.traffic.recent-activity .activity-list .member .user .avatar {
   margin: 0 15px 0 0;
   display: inline-block;
 }
-main .module.recent-activity .activity-list .member .more {
+main .module.traffic.recent-activity .activity-list .member .more {
   margin-left: auto;
 }
 @media (min-width: 768px) {
-  main .module.mobile, main .module.recent-activity {
+  main .module.traffic.mobile, main .module.traffic.recent-activity {
     border-top: none;
     border-left: 1px solid #cccccc;
   }
-  main .module.settings {
+  main .module.traffic.settings {
     border-left: 1px solid #cccccc;
   }
 }
-main .tab .heading {
+main .module .tab .heading {
   padding-right: 30px;
   padding-left: 30px;
 }
-main .tab .search {
+main .module .tab .search {
   border-bottom: 1px solid #cccccc;
 }
 @media (min-width: 768px) {
-  main .tab .search {
+  main .module .tab .search {
     background-color: #fbfbfb;
     border-left: 1px solid #cccccc;
     padding-right: 30px;

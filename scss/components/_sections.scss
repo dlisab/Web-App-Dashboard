@@ -174,21 +174,21 @@ main {
 						}
 					}
 				}
-			}
-			@media (min-width: 1024px){
+		
+			/*@media (min-width: 1024px){
 			.traffic-type {
 			padding-right: 42px;
 				}				
 			}
 		}
-
+		*/
 		&.mobile,
 		&.recent-activity,
 		&.message,
 		&.settings {
 			border-top: 1px solid $grey;
 		}
-	}
+	
 
 		&.new-members {
 			/*display:flex;
@@ -288,7 +288,7 @@ main {
 				border-left: 1px solid $grey;
 			}
 		}
-	
+	}
 
 
 	.tab {
@@ -306,6 +306,7 @@ main {
 			}
 		}
 	}
+}
 
 	.submodule {
 		background-color: $off-white;
@@ -335,3 +336,4 @@ main {
 		width: 100%;
 	}
 
+}
