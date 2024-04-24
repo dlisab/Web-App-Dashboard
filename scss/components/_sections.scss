@@ -148,7 +148,7 @@ main {
 			//flex-direction: row;
 			.traffic-header {
 				display: flex;
-				flex-direction: column;
+				flex-direction: row;
 				justify-content: space-between;
 				.traffic-type {
 					list-style-type: none;
