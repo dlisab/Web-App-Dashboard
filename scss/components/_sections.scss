@@ -22,7 +22,7 @@ header {
 			&:hover {
 				cursor: pointer;
 			}
-		}
+		
 		.notification-list {
 			display: none;
 			&.show-notification {
@@ -74,6 +74,7 @@ header {
 				margin: 5px;
 			}
 		}
+	}
 	
 		.user {
 			display: flex;
@@ -82,8 +83,8 @@ header {
 			align-items: center;
 			}
 			@media (min-width: 768px){
-				padding-right: 5px;
-			}
+				padding-right: 16px;
+		}
 	}
 }
 main {
@@ -114,7 +115,7 @@ main {
 		&.hide {
 			display: none;
 		}
-		width:100%;
+	
 		.alert {
 			margin-right: 10px;
 			margin-left: 30px;
@@ -124,6 +125,7 @@ main {
 			background-color: $lavender;
 			color: $white;
 			width:100%;
+
 			.closebtn {
 			    padding-left: 15px;
 			    color: white;
@@ -146,7 +148,7 @@ main {
 			//flex-direction: row;
 			.traffic-header {
 				display: flex;
-				flex-direction: row;
+				flex-direction: column;
 				justify-content: space-between;
 				.traffic-type {
 					list-style-type: none;
@@ -171,14 +173,14 @@ main {
 			padding-right: 42px;
 				}				
 			}
-		}
+		
 		&.mobile,
 		&.recent-activity,
 		&.message,
 		&.settings {
 			border-top: 1px solid $grey;
 		}
-	}
+	
 		&.new-members {
 			/*display:flex;
 			flex-direction: column;
@@ -205,14 +207,8 @@ main {
 					}
 					.user {
 						display: flex;
-						flex-direction: column;
-						justify-content: center;
-						@media (min-width: 768px){
-							flex-direction: row;
+						flex-direction: row;
 						justify-content: flex-start;
-						align-items: row;
-						text-align: left;
-						}
 						.avatar {
 							margin: 0 15px 0 0;
 							display: inline-block;
@@ -233,20 +229,8 @@ main {
 					padding-top: 10px;
 					padding-bottom: 10px;
 					display: flex;
-					flex-direction: row;
-					}
-
-
-
-    
-          
-            
-    
-
-          
-          Expand Down
-    
-    
+					flex-direction: column;
+					
   
 					&:last-child {
 						border-bottom: none;
@@ -274,6 +258,7 @@ main {
 					}
 				}
 			}
+		}
 		@media (min-width: 768px){
 			&.mobile,
 			&.recent-activity {
@@ -284,7 +269,7 @@ main {
 				border-left: 1px solid $grey;
 			}
 		}
-	
+	}
 	.tab {
 		.heading {
 			padding-right: 30px;
@@ -324,3 +309,4 @@ main {
 	.chart-container {
 		width: 100%;
 	}
+}
